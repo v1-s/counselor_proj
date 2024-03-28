@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Pricing & Details</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .fa-solid.fa-paper-plane.fa-l {
+            margin-left: -70%;
+        }
+
+        .contact-info {
+            background-color: rgb(88, 145, 103);
+            display: grid;
+            grid-template-columns: 60% 1fr;
+            align-items: center;
+            /* Vertically align content in the grid */
+        }
+
+        .contact-info i {
+            color: white
+        }
+
+        .contact-links {
+            margin-left: 40%;
+        }
+
+        .contact-links i {
+
+            padding: 10px 15px 10px 15px;
+        }
+
+        .contact-box {
+            margin: 10px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            /* Two columns: flexible text and auto-width icon */
+            /* grid-gap: 5px;  Add spacing between items */
+            align-items: center;
+            /* Vertically center content */
+        }
+
+        .contact-box p {
+            margin-left: 20%;
+            color: white;
+        }
+
+        .contact-box p a {
+            text-decoration: none;
+            margin: 3px;
+            color: white;
+            /* Set email link color */
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 40% auto;
+            /* Two columns: logo and navigation */
+            align-items: center;
+            /* Vertically align content in the grid */
+        }
+
+        .logo {
+            grid-column: 1;
+            /* Place logo in the first column */
+        }
+
+        .logo img {
+            margin-left: 70px;
+        }
+
+        nav {
+            grid-column: 2;
+            /* Place navigation in the second column */
+            text-align: center;
+            /* Center navigation links */
+            margin-left: -100px;
+            position: sticky;
+            top: 0;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            /* Remove default bullet points */
+        }
+
+        nav li {
+            display: inline-block;
+            /* Display navigation items inline */
+            margin: 0 18px;
+            /* Add spacing between links */
+        }
+
+        nav a {
+            text-decoration: none;
+            /* Remove underline from links */
+            color: inherit;
+            /* Inherit text color from body */
+            font-weight: bold;
+            /* Make navigation links bolder */
+        }
+
+        nav a:hover,
+        .banner-text a:hover {
+            color: blueviolet;
+            /* Change link color on hover */
+        }
+
+        li:nth-child(1) {
+            color: orange;
+        }
+
+        /* ---------------------------BANNER-HERO ------------------------------------------------------------ */
+        .overlay {
+            height: 80vh;
+            width: 100%;
+            top: 0;
+            left: 0px;
+        }
+
+        .image-container h1 {
+            margin: 0px 0px 0px 350px;
+            color: darkorange;
+            font-size: 60px;
+            font-weight: 800;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .banner-text {
+            text-decoration: none;
+            margin: -150px 0px 10px 500px;
+            display: grid;
+            grid-template-columns: 20% 20%;
+            grid-gap: 3px;
+        }
+
+        .banchor {
+            margin-left: -70px;
+        }
+
+        .banner-text a {
+            text-decoration: none;
+            color: rgb(229, 255, 0);
+        }
+
+        .banner-text i {
+            padding-left: 5px;
+        }
+/* -----------------------------------------Pricing & Details Section --------------------------------------- */
+        .price-container{
+            background-color: #f5f4f0;
+            padding-bottom: 100px;
+        }
+        .pricing-container {
+            margin: 0px 0px 0px 520px;
+            padding-top: 150px;
+            display: grid;
+            grid-template-rows: 20% 20%;
+            grid-gap: 20px;
+            color: darkorange;
+            
+        }
+
+        .pricing-container h1 {
+            margin-left: -140px;
+            font-size: 45px;
+            color: black;
+        }
+
+
+        .gridprice-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive layout */
+            grid-gap: 20px;
+            justify-content: center; 
+            margin: 50px 80px 0px 80px ;
+           
+        }
+
+        .pricing-card {
+            background-color: white; /* Light gray background */
+            padding: 30px 30px 0px 30px ;
+            border-radius: 5px; 
+            text-align: center;
+            margin-bottom: 0px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        .card-header {
+             padding: 30px;
+             border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        .card-header p{
+            display:block;
+        }
+        .number{
+            font-size: 60px;
+            font-weight: 600;
+            color: #589167;
+            text-align: center;
+        }
+        .card-header sup{
+            font-size: 24px;
+            top: -1em;
+            color: #b3b3b3;
+
+        }
+        sub,sup{
+            position: relative;
+            font-size: 75%;
+            line-height: 0;
+            vertical-align: baseline;
+        }
+
+        .card-header h2 {
+            margin-top: 22px;
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+
+        .card-features {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .card-features i{
+            color: darkorange;
+        }
+
+        .card-features li {
+            color: black;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            line-height: 1.5; 
+        }
+        button{
+            padding: 1rem 0.5rem 1rem 0.5rem;
+            background: #589167;
+            border: 1px solid #589167 ;
+            color: #fff;
+            border-radius: 3px;
+            text-transform: uppercase;
+            font-style: 16px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            width: 100%;
+            margin:50px auto ;
+            cursor: pointer;
+            vertical-align: middle;
+            /* line-height: 1.5; */
+}
+/*---------------------------------Pricing II section--------------------------------------------  */
+        .contact-form {
+            color: white;
+            position: absolute;
+            max-width: 600px;
+            margin: 80px 0px 100px 150px; /* Center the form horizontally */
+            padding: 30px;
+        }
+
+        .contact-form h2 {
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group { 
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .frm-flex{
+            display: flex;
+            flex-direction:row;
+            gap: 50px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            font-family: 'Times New Roman', Times, serif;
+            color: black;
+            font-size: 15px;
+            width: 100%;
+            padding: 10px;
+           
+        }
+
+        textarea {
+            height: 100px; /* Adjust textarea height as needed */
+        }
+        
+        button[type="submit"]:hover {
+            background-color: #3e8e41; /* Darker green on hover */
+        }
+        .price-overlay {
+            background-color: rgba( 92,113,86, 0.5);
+            background-size: cover;
+            width: 100%; /* Full viewport width */
+            height: 100vh; /* Full viewport height */
+          
+        } 
+        .price-bkgrnd {
+            background-image: url('./Counselorassests/Pricecompany.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%; /* Prevent image overflow */
+        } 
+/* --------------------------------Footer---------------------------------------- */
+.footer {
+            background-color: black;
+            padding: 40px 0;
+            /* Padding top and bottom */
+            color: white;
+            /* Text color */
+        }
+
+        .footer-container {
+            
+            display: flex;
+            /* grid-template-columns: 20% 20% 20% 20%; */
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            max-width: 1000px;
+    
+            margin: 0 auto;
+           
+        }
+
+        .footer-col {
+            margin-left: 40px;
+            flex: 1;
+            margin-bottom: 20px;
+           
+        }
+
+        .footer-heading {
+            font-size: 18px;
+            /* Heading font size */
+            margin-bottom: 10px;
+            /* Space below heading */
+            color: darkorange;
+        }
+        .footer-title{
+            font-size: 30px;
+            /* Heading font size */
+            margin-bottom: 10px;
+        }
+
+        .footer-nav {
+            width: 100%;
+            list-style: none;
+            padding: 0;
+    
+            margin: 0;
+        
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+
+        .footer-nav li {
+            margin-bottom: 15px;
+           
+            /* Spacing between list items */
+        }
+        .footer-navlink li{
+            display: inline-flex;
+            border: 3px solid transparent;
+            border-radius: 50%;
+            margin-left: 15px;
+            background-color: olivedrab;
+            padding: 5px;
+        }
+        .footer-navlink i{
+            color: white;
+            
+        }
+
+        .footer-nav a {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+            color: white;
+            /* Inherit text color from footer */
+            text-decoration: none;
+            /* Remove default link underline */
+        }
+
+        .footer-nav a:hover {
+            color:greenyellow;
+            /* Text color on hover */
+            font-weight: bold;
+            /* Bold text on hover */
+        }
+        .footer-navlink i:hover{
+            color: darkorange;
+        }
+        .footer-info i{
+            margin-left: -20px;
+             color: white;
+        }
+    
+        .footer-info a{
+            padding-left: 90px;
+        }
+
+        .footer-info,
+        .footer-address {
+            font-family: 'Times New Roman', Times, serif;
+            margin-bottom: 10px;
+            /* Spacing between info lines */
+        }
+
+
+
+        
+
+    </style>    
+
+</head>
+<body>
+     <!-----------------------------HEADER SECTION ------------------------------------>
+     <header>
+        <div class="contact-info">
+            <div class="contact-box">
+                <p><i class="fa-solid fa-phone fa-l"></i>+00 123 456 7890 </p>
+                <p><i class="fa-solid fa-paper-plane fa-l"><a
+                            href="mailto:youremail@email.com"></i>youremail@email.com</a></p>
+            </div>
+            <div class="contact-links">
+                <i class="fa-brands fa-twitter fa-l"></i>
+                <i class="fa-brands fa-facebook-f fa-l"></i>
+                <i class="fa-brands fa-instagram fa-l"></i>
+                <i class="fa-solid fa-globe fa-lg"></i>
+            </div>
+        </div>
+        <div class="container">
+            <div class="logo">
+                <img src="./Counselorassests/1584442005485.jpg" alt="Counselor Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="Counselor.html">Counselor</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Pricing&Details.html">Pricing</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- -----------------------------------BANNER-HERO------------------------------------- -->
+    <div class="image-container">
+        <div class="banner">
+            <img src="./Counselorassests/bannerimg2.jpg" alt="Image 2" class="overlay">
+            <div class="banner-text">
+                <a href="#">HOME<i class="fa-solid fa-greater-than fa-xs"></i></a><a href="#" class="banchor">PRICING<i
+                        class="fa-solid fa-greater-than fa-xs"></i></a>
+            </div>
+            <h1>PRICING & PLANS</h1>
+
+        </div>
+    </div>
+<!-----------------------------------------PRICING & DETAILS SECTION-------------------------------------------  -->
+    <div class="price-container">
+            <div class="pricing-container">
+                <h3>Price & Plans</h3>
+                <h1>Affordable Packages</h1>
+            </div>
+            <div class="gridprice-container">
+                    <div class="pricing-card">
+                    <div class="card-header">
+                        <p><sup>$</sup>  <span class="number">49</span>  <sub>/mo</sub></p>
+                          
+                        <h2>For Adults</h2>   
+                    </div>
+                    
+                    <ul class="card-features">
+                        <li><i class="fa-solid fa-check"></i> Individual Counseling</li>
+                        <li><i class="fa-solid fa-check"></i> Couples Therapy</li>
+                        <li><i class="fa-solid fa-check"></i> Family Therapy</li>
+                    </ul>
+                    <button>GET STARTED</button>
+                    </div>
+                    <div class="pricing-card recommended">
+                    <div class="card-header">
+                        <p><sup>$</sup>  <span class="number">79</span>  <sub>/mo</sub></p>
+                        <h2>For Children</h2>
+                         
+                        
+                    </div>
+                    <ul class="card-features">
+                        <li><i class="fa-solid fa-check"></i> Counseling for Children</li>
+                        <li><i class="fa-solid fa-check"></i> Behavioral Management</li>
+                        <li><i class="fa-solid fa-check"></i> Educational Counseling</li>
+                       
+                    </ul>
+                    <button>GET STARTED</button>
+                    </div>
+                    <div class="pricing-card">
+                    <div class="card-header">
+                        <p><sup>$</sup>  <span class="number">109</span>  <sub>/mo</sub></p>
+                        <h2>For Business</h2> 
+                    </div>
+                    <ul class="card-features">
+                        <li><i class="fa-solid fa-check"></i> Consultancy Services</li>
+                        <li><i class="fa-solid fa-check"></i> Employee Counseling</li>
+                        <li><i class="fa-solid fa-check"></i> Psychological Assessment</li>
+                    </ul>
+                    <button>GET STARTED</button>
+                    </div>    
+                </div>
+    </div>     
+<!----------------------------------------------Pricing II section -------------------------------------  -->
+    
+        <div class="price-bkgrnd">
+            <div class="price-overlay"> 
+        <section class="contact-form">
+            <h2>Send a Message & Get in touch!</h2>
+            <form action="#">
+            <div class="frm-flex">   
+                <div class="form-group">
+                    <!-- <label for="name">Your Name</label> -->
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <!-- <label for="email">Email</label> -->
+                    <input type="email" id="email" name="email"  placeholder="Email" required>
+                </div>
+            </div> 
+            <div class="form-group">
+                <!-- <label for="text">Services</label> -->
+                <input type="text" id="service" name="services" placeholder="Services">
+            </div>
+            <div class="form-group">
+                <!-- <label for="message">Message</label> -->
+                <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
+            </div>
+            <button type="submit">Send message</button>
+            </form>
+        </section> 
+    </div>
+  </div>
+
+<!-- --------------------------------Footer------------------------------------------------- -->
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h2 class="footer-title">AcheiversIT</h2>
+            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit quas optio omnis quae
+                maxime! Neque, eos nihil.</p>
+            <ul class="footer-navlink">
+                <li><a href="#"><i class="fa-brands fa-twitter fa-l"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook-f fa-l"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram fa-l"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3 class="footer-heading">Explore</h3>
+            <ul class="footer-nav">
+                <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>About</a></li>
+                <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Contact</a></li>
+                <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>What We Do</a></li>
+                <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Plans & Pricing </a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3 class="footer-heading">Legal</h3>
+            <ul class="footer-nav">
+                <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Join us</a></li>
+                <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Blog</a></li>
+                <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Privacy Policy</a></li>
+                <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Terms & Policies</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3 class="footer-heading">Company</h3>
+            <ul class="footer-nav">
+                <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>About Us</a></li>
+                <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Blog</a></li>
+                <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Contact</a></li>
+                <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Careers</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3 class="footer-heading">Have a question</h3>
+           
+            <address class="footer-info">
+                203 Fake St. Mountain View, San Francisco, California, USA
+            </address>
+            <p class="footer-info">
+                <i class="fa-solid fa-phone fa-l"> </i>+2 392 3929 210<br>
+                <a href="mailto:info@yourdomain.com"><i class="fa-solid fa-paper-plane fa-l"></i>info@yourdomain.com</a>
+                
+            </p>
+        </div>
+    </div>
+</footer>
+   
+
+</body>
+</html>

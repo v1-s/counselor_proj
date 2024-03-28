@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+<style>
+/*-------------------------------------------Footer----------------------------------- */
+    .footer {
+        background-color: black;
+        padding: 40px 0;
+        /* Padding top and bottom */
+        color: white;
+        /* Text color */
+    }
+
+    .footer-container {
+        
+        display: flex;
+        /* grid-template-columns: 20% 20% 20% 20%; */
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        max-width: 1000px;
+
+        margin: 0 auto;
+       
+    }
+
+    .footer-col {
+        margin-left: 40px;
+        flex: 1;
+        margin-bottom: 20px;
+       
+    }
+
+    .footer-heading {
+        font-size: 18px;
+        /* Heading font size */
+        margin-bottom: 10px;
+        /* Space below heading */
+        color: darkorange;
+    }
+    .footer-title{
+        font-size: 30px;
+        /* Heading font size */
+        margin-bottom: 10px;
+    }
+
+    .footer-nav {
+        width: 100%;
+        list-style: none;
+        padding: 0;
+
+        margin: 0;
+    
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+
+    .footer-nav li {
+        margin-bottom: 15px;
+       
+        /* Spacing between list items */
+    }
+    .footer-navlink li{
+        display: inline-flex;
+        border: 3px solid transparent;
+        border-radius: 50%;
+        margin-left: 15px;
+        background-color: olivedrab;
+        padding: 5px;
+    }
+    .footer-navlink i{
+        color: white;
+        
+    }
+
+    .footer-nav a {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+        color: white;
+        /* Inherit text color from footer */
+        text-decoration: none;
+        /* Remove default link underline */
+    }
+
+    .footer-nav a:hover {
+        color:greenyellow;
+        /* Text color on hover */
+        font-weight: bold;
+        /* Bold text on hover */
+    }
+    .footer-navlink i:hover{
+        color: darkorange;
+    }
+    .footer-info i{
+        margin-left: -20px;
+         color: white;
+    }
+
+    .footer-info a{
+        padding-left: 90px;
+    }
+
+    .footer-info,
+    .footer-address {
+        font-family: 'Times New Roman', Times, serif;
+        margin-bottom: 10px;
+        /* Spacing between info lines */
+    }
+</style>
+</head>
+<body>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h2 class="footer-title">AcheiversIT</h2>
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit quas optio omnis quae
+                    maxime! Neque, eos nihil.</p>
+                <ul class="footer-navlink">
+                    <li><a href="#"><i class="fa-brands fa-twitter fa-l"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f fa-l"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram fa-l"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-heading">Explore</h3>
+                <ul class="footer-nav">
+                    <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>About</a></li>
+                    <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Contact</a></li>
+                    <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>What We Do</a></li>
+                    <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Plans & Pricing </a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-heading">Legal</h3>
+                <ul class="footer-nav">
+                    <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Join us</a></li>
+                    <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Blog</a></li>
+                    <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Privacy Policy</a></li>
+                    <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Terms&Policies</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-heading">Company</h3>
+                <ul class="footer-nav">
+                    <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>About Us</a></li>
+                    <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Blog</a></li>
+                    <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Contact</a></li>
+                    <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-heading">Have a question</h3>
+               
+                <address class="footer-info">
+                    203 Fake St. Mountain View, San Francisco, California, USA
+                </address>
+                <p class="footer-info">
+                    <i class="fa-solid fa-phone fa-l"> </i>+2 392 3929 210<br>
+                    <a href="mailto:info@yourdomain.com"><i class="fa-solid fa-paper-plane fa-l"></i>info@yourdomain.com</a>
+                    
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Counselor</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .fa-solid.fa-paper-plane.fa-l {
+            margin-left: -70%;
+        }
+
+        .contact-info {
+            background-color: rgb(88, 145, 103);
+            display: grid;
+            grid-template-columns: 60% 1fr;
+            align-items: center;
+            /* Vertically align content in the grid */
+        }
+
+        .contact-info i {
+            color: white
+        }
+
+        .contact-links {
+            margin-left: 40%;
+        }
+
+        .contact-links i {
+
+            padding: 10px 15px 10px 15px;
+        }
+
+        .contact-box {
+            margin: 10px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            /* Two columns: flexible text and auto-width icon */
+            /* grid-gap: 5px;  Add spacing between items */
+            align-items: center;
+            /* Vertically center content */
+        }
+
+        .contact-box p {
+            margin-left: 20%;
+            color: white;
+        }
+
+        .contact-box p a {
+            text-decoration: none;
+            margin: 3px;
+            color: white;
+            /* Set email link color */
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 40% auto;
+            /* Two columns: logo and navigation */
+            align-items: center;
+            /* Vertically align content in the grid */
+        }
+
+        .logo {
+            grid-column: 1;
+            /* Place logo in the first column */
+        }
+
+        .logo img {
+            margin-left: 70px;
+        }
+
+        nav {
+            grid-column: 2;
+            /* Place navigation in the second column */
+            text-align: center;
+            /* Center navigation links */
+            margin-left: -100px;
+            position: sticky;
+            top: 0;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            /* Remove default bullet points */
+        }
+
+        nav li {
+            display: inline-block;
+            /* Display navigation items inline */
+            margin: 0 18px;
+            /* Add spacing between links */
+        }
+
+        nav a {
+            text-decoration: none;
+            /* Remove underline from links */
+            color: inherit;
+            /* Inherit text color from body */
+            font-weight: bold;
+            /* Make navigation links bolder */
+        }
+
+        nav a:hover,
+        .banner-text a:hover {
+            color: blueviolet;
+            /* Change link color on hover */
+        }
+
+        li:nth-child(1) {
+            color: orange;
+        }
+
+        /* ---------------------------BANNER-HERO ------------------------------------------------------------ */
+        .overlay {
+            height: 80vh;
+            width: 100%;
+            top: 0;
+            left: 0px;
+        }
+
+        .image-container h1 {
+            margin: 0px 0px 0px 470px;
+            color: darkorange;
+            font-size: 60px;
+            font-weight: 800;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .banner-text {
+            text-decoration: none;
+            margin: -150px 0px 10px 500px;
+            display: grid;
+            grid-template-columns: 20% 20%;
+            grid-gap: 3px;
+        }
+
+        .banchor {
+            margin-left: -70px;
+        }
+
+        .banner-text a {
+            text-decoration: none;
+            color: rgb(229, 255, 0);
+        }
+
+        .banner-text i {
+            padding-left: 5px;
+        }
+
+        /* ---------------------------------------Services------------------------------------- */
+        .serv-container {
+            margin: 170px 0px 0px 580px;
+            display: grid;
+            grid-template-rows: 20% 20%;
+            grid-gap: 20px;
+            color: darkorange;
+        }
+
+        .serv-container h4 {
+            margin-left: -90px;
+            font-size: 50px;
+            color: black;
+        }
+
+        .grid-container {
+            margin-left: 12%;
+            padding: 30px;
+            /* width:500px; */
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* Three columns of equal width */
+            gap: 20px;
+            /* Spacing between grid items */
+
+        }
+
+        .grid-item {
+            text-align: center;
+            padding: 15px;
+
+        }
+
+        .grid-itemtext {
+            padding: 15px;
+            margin-left: -25%;
+            justify-content: center;
+        }
+
+        /* .grid-itemtext p{
+                padding-left: -50px;
+                text-align: center;
+                justify-content: center;
+            } */
+        .grid-itemtext h2 {
+            margin-left: -12%;
+        }
+
+        .grid-item i {
+            background-color: white;
+            border-radius: 600px;
+            /* Rounded corners */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .circle {
+            position: relative;
+            width: 170px; /* Adjust width as needed */
+            height: 170px;  /* Adjust height as needed */
+            border-radius: 50%;   /* Create a circle */
+            background-color: #f0f0f0;  /* Light gray background */
+            display: flex; /* Allow stacking content inside */
+            flex-direction: column;  /* Stack content vertically */
+            justify-content: center;  /* Center content vertically */
+            align-items: center; /* Center content horizontally */
+           
+        }
+
+        .fa-solid {
+            color: #333;
+            /* Font Awesome icon color */
+            margin-bottom: 10px;
+            /* Add spacing below the icon */
+        }
+
+        .outer-circle {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            z-index: 1;
+            background: darkorange;
+            border: 5px solid #fff;
+            justify-content: center;
+            /* Center content vertically */
+            align-items: center;
+        }
+
+        .outer-circle span {
+            color: darkblue;
+            line-height: 40px;
+            align-items: center;
+
+        }
+
+        .circle:hover {
+            background-color: rgb(182, 143, 218);
+            /* Change circle background to green on hover */
+        }
+
+        .circle:hover .outer-circle {
+            background-color: white;
+        }
+
+        /* .circle:hover i{
+                background-color: burlywood;
+            } */
+        /* -------------------------------Services II section------------------------------------------ */
+        .serv-2container {
+            background-color: #f5f4f0;
+            padding-bottom: 100px;
+        }
+
+        .serv-innercontainer {
+            padding: 80px 0px 70px 0px;
+            margin: 100px 0px 0px 540px;
+            display: grid;
+            grid-template-rows: 20% 20%;
+            grid-gap: 20px;
+            color: darkorange;
+
+        }
+
+        .serv-innercontainer h1 {
+            margin-left: -38%;
+            font-size: 40px;
+            color: black;
+        }
+
+        .serv-gridcontainer {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            padding-bottom: 0px;
+
+        }
+
+        .card {
+            height: 350px;
+            background-color: white;
+            border-radius: 0px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .cardimage img {
+            height: 350px;
+            width: 100%;
+        }
+
+        .card p {
+            padding: 10px 20px 0px 40px;
+            justify-content: center;
+            /* margin-bottom: 5px; */
+        }
+
+        .card h2 {
+            padding: 50px 0px 0px 50px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            /* Space below title */
+        }
+
+        .card:hover {
+            background-color: orange;
+            color: white;
+        }
+
+        /*     --------------------------Footer----------------------------------------     */
+        .footer {
+            background-color: black;
+            padding: 40px 0;
+            /* Padding top and bottom */
+            color: white;
+            /* Text color */
+        }
+
+        .footer-container {
+            
+            display: flex;
+            /* grid-template-columns: 20% 20% 20% 20%; */
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            max-width: 1000px;
+    
+            margin: 0 auto;
+           
+        }
+
+        .footer-col {
+            margin-left: 40px;
+            flex: 1;
+            margin-bottom: 20px;
+           
+        }
+
+        .footer-heading {
+            font-size: 18px;
+            /* Heading font size */
+            margin-bottom: 10px;
+            /* Space below heading */
+            color: darkorange;
+        }
+        .footer-title{
+            font-size: 30px;
+            /* Heading font size */
+            margin-bottom: 10px;
+        }
+
+        .footer-nav {
+            width: 100%;
+            list-style: none;
+            padding: 0;
+    
+            margin: 0;
+        
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+
+        .footer-nav li {
+            margin-bottom: 15px;
+           
+            /* Spacing between list items */
+        }
+        .footer-navlink li{
+            display: inline-flex;
+            border: 3px solid transparent;
+            border-radius: 50%;
+            margin-left: 15px;
+            background-color: olivedrab;
+            padding: 5px;
+        }
+        .footer-navlink i{
+            color: white;
+            
+        }
+
+        .footer-nav a {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+            color: white;
+            /* Inherit text color from footer */
+            text-decoration: none;
+            /* Remove default link underline */
+        }
+
+        .footer-nav a:hover {
+            color:greenyellow;
+            /* Text color on hover */
+            font-weight: bold;
+            /* Bold text on hover */
+        }
+        .footer-navlink i:hover{
+            color: darkorange;
+        }
+        .footer-info i{
+            margin-left: -20px;
+             color: white;
+        }
+    
+        .footer-info a{
+            padding-left: 90px;
+        }
+
+        .footer-info,
+        .footer-address {
+            font-family: 'Times New Roman', Times, serif;
+            margin-bottom: 10px;
+            /* Spacing between info lines */
+        }
+    </style>
+</head>
+
+<body>
+    <!-----------------------------HEADER SECTION ------------------------------------>
+    <header>
+        <div class="contact-info">
+            <div class="contact-box">
+                <p><i class="fa-solid fa-phone fa-l"></i>+00 123 456 7890 </p>
+                <p><i class="fa-solid fa-paper-plane fa-l"><a
+                            href="mailto:youremail@email.com"></i>youremail@email.com</a></p>
+            </div>
+            <div class="contact-links">
+                <i class="fa-brands fa-twitter fa-l"></i>
+                <i class="fa-brands fa-facebook-f fa-l"></i>
+                <i class="fa-brands fa-instagram fa-l"></i>
+                <i class="fa-solid fa-globe fa-lg"></i>
+            </div>
+        </div>
+        <div class="container">
+            <div class="logo">
+                <img src="./Counselorassests/1584442005485.jpg" alt="Counselor Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="Counselor.html">Counselor</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Pricing&Details.html">Pricing</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- -----------------------------------BANNER-HERO------------------------------------- -->
+    <div class="image-container">
+        <div class="banner">
+            <img src="./Counselorassests/bannerimg2.jpg" alt="Image 2" class="overlay">
+            <div class="banner-text">
+                <a href="#">HOME<i class="fa-solid fa-greater-than fa-xs"></i></a><a href="#" class="banchor">SERVICES<i
+                        class="fa-solid fa-greater-than fa-xs"></i></a>
+            </div>
+            <h1>Services</h1>
+
+        </div>
+    </div>
+    <!--------------------------------------------SERVICES-------------------------------------------  -->
+    <div class="serv-container">
+        <h3>services</h3>
+        <h4>How It Works</h4>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item step-1">
+
+            <div class="circle">
+                <i class="fa-solid fa-calendar fa-3x"></i>
+                <div class="outer-circle">
+                    <span>01</span>
+                </div>
+            </div>
+            <div class="grid-itemtext">
+                <h2>Make Schedule</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod odio ac.</p>
+            </div>
+        </div>
+        <div class="grid-item step-2">
+            <div class="circle">
+                <div class="outer-circle">
+                    <span>02</span>
+                </div>
+                <i class="fa-solid fa-comments fa-3x"></i>
+            </div>
+            <div class="grid-itemtext">
+                <h2>Start Discussion</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod odio ac.</p>
+            </div>
+        </div>
+        <div class="grid-item step-3">
+            <div class="circle">
+                <div class="outer-circle">
+                    <span>03</span>
+                </div>
+                <i class="fa-solid fa-check-circle fa-3x"></i>
+            </div>
+            <div class="grid-itemtext">
+                <h2>Enjoy Plan</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod odio ac.</p>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------------Services II section----------------------------------  -->
+    <div class="serv-2container">
+
+        <div class="serv-innercontainer">
+            <h3>services</h3>
+            <h1>We Can Help You With This Situation</h1>
+        </div>
+
+        <div class="serv-gridcontainer">
+            <div class="cardimage">
+                <img src="./Counselorassests/card1.jpg">
+            </div>
+            <div class="card">
+                <h2>Student Problem</h2>
+                <p>
+                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                    the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
+                    language ocean.</p>
+            </div>
+            <div class="cardimage">
+                <img src="./Counselorassests/card2.jpg">
+            </div>
+            <div class="card">
+                <h2>Card Title</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                    the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
+                    language ocean.</p>
+            </div>
+        </div>
+        <!-- 2row -->
+        <div class="serv-gridcontainer">
+            <div class="card">
+                <h2>Card Title</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                    the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
+                    language ocean.</p>
+            </div>
+            <div class="cardimage">
+                <img src="./Counselorassests/card3.jpg">
+            </div>
+
+            <div class="card">
+                <h2>Card Title</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                    the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
+                    language ocean.</p>
+            </div>
+            <div class="cardimage">
+                <img src="./Counselorassests/card4.jpg">
+            </div>
+        </div>
+        <!-- 3row -->
+        <div class="serv-gridcontainer">
+            <div class="cardimage">
+                <img src="./Counselorassests/card5.jpg">
+            </div>
+            <div class="card">
+                <h2>Card Title</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                    the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
+                    language ocean.</p>
+            </div>
+            <div class="cardimage">
+                <img src="./Counselorassests/card6.jpg">
+            </div>
+            <div class="card">
+                <h2>Card Title</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                    the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
+                    language ocean.</p>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------------------Footer----------------------------------------------- -->
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h2 class="footer-title">AcheiversIT</h2>
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit quas optio omnis quae
+                    maxime! Neque, eos nihil.</p>
+                <ul class="footer-navlink">
+                    <li><a href="#"><i class="fa-brands fa-twitter fa-l"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f fa-l"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram fa-l"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-heading">Explore</h3>
+                <ul class="footer-nav">
+                    <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>About</a></li>
+                    <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Contact</a></li>
+                    <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>What We Do</a></li>
+                    <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Plans & Pricing </a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-heading">Legal</h3>
+                <ul class="footer-nav">
+                    <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Join us</a></li>
+                    <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Blog</a></li>
+                    <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Privacy Policy</a></li>
+                    <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Terms&Policies</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-heading">Company</h3>
+                <ul class="footer-nav">
+                    <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>About Us</a></li>
+                    <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Blog</a></li>
+                    <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Contact</a></li>
+                    <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-heading">Have a question</h3>
+               
+                <address class="footer-info">
+                    203 Fake St. Mountain View, San Francisco, California, USA
+                </address>
+                <p class="footer-info">
+                    <i class="fa-solid fa-phone fa-l"> </i>+2 392 3929 210<br>
+                    <a href="mailto:info@yourdomain.com"><i class="fa-solid fa-paper-plane fa-l"></i>info@yourdomain.com</a>
+                    
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
