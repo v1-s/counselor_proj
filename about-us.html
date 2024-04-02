@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Councelor About-us</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Roboto", Arial, sans-serif;
+            background: #fff;
+            font-size: 17px;
+            line-height: 1.8;
+            font-weight: 400;
+            color: gray;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* 1st top-header starts here */
+        .contact-info {
+            background-color: rgb(88, 145, 103);
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 90px;
+        }
+
+        .contact-box {
+            display: flex;
+            color: white;
+            font-size: 12px;
+        }
+
+        .mail {
+            text-decoration: none;
+            color: white;
+        }
+
+        .mail-to {
+            padding-left: 20px;
+        }
+
+        .contact-links {
+            margin: 20px;
+        }
+
+        .contact-links a {
+            padding-left: 20px;
+            color: white;
+
+        }
+
+        /* 1st top header stops here */
+
+        /* 2nd top header starts here */
+        .container-logo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .container-logo nav {
+            margin-right: 100px;
+        }
+
+        .logo img {
+            margin-left: 80px;
+            width: 150px;
+            height: 55px;
+        }
+
+        .bl-color {
+            color: rgba(0, 0, 0, 0.7);
+        }
+
+        .margin-zero {
+            margin-top: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 0 18px;
+            color: #000000;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: inherit;
+            font-weight: bold;
+            font-size: 15px;
+
+        }
+
+        nav a:hover,
+        .banner-text a:hover {
+            color: rgb(88, 145, 103);
+
+        }
+
+        li:nth-child(1) {
+            color: rgb(88, 145, 103);
+        }
+
+        /* 2nd top header stops here */
+
+        /* banner starts here */
+        .banner-head {
+            font-size: 60px;
+            margin-top: 0px;
+            color: #000000;
+            line-height: 1.2;
+            margin-bottom: 10px;
+        }
+
+        .banner-text {
+            font-size: 18px;
+            color: #000000;
+        }
+
+        .banner-button button {
+            padding: 15px 15px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .contact-us {
+            background-color: rgb(88, 145, 103);
+            color: white;
+            font-weight: 400;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .read-more {
+            background-color: white;
+            color: black;
+            font-weight: 400;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .banner-image {
+            background-image: url(/assets/banner-image-home.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 820px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .banner-main-text {
+            margin: auto 70px;
+        }
+
+        .play-btn i {
+            color: rgb(88, 145, 103);
+
+        }
+
+        .play-section {
+            margin-right: 100px;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: #fff;
+            position: relative;
+        }
+
+        .play-btn {
+            position: relative;
+            top: 30px;
+            left: 35px;
+        }
+
+        /* banner ends here */
+
+        /* counselor specialist starts here */
+        .container-section {
+            display: flex;
+            margin-top: -70px;
+        }
+
+        .to-do-list,
+        .team-group,
+        .approach-list {
+            display: flex;
+
+        }
+
+        .text h2 {
+            font-size: 24px;
+        }
+
+        .services-h2 {
+            font-size: 24px;
+        }
+
+        .to-do-list {
+            background-color: #589167;
+            color: #fff;
+            width: 450px;
+            padding: 30px 30px 30px 100px;
+
+        }
+
+        .approach-list {
+            background-color: #4e815c;
+            color: #fff;
+            width: 380px;
+            padding: 30px;
+        }
+
+        .team-group {
+            background-color: #528760;
+            color: #fff;
+            width: 380px;
+            padding: 30px;
+        }
+
+        .to-do-list svg {
+            width: 150px;
+            height: 100px;
+            margin-right: 30px;
+
+        }
+
+        .approach-list svg,
+        .team-group svg {
+            width: 150px;
+            height: 100px;
+            margin-right: 30px;
+
+        }
+
+        .text p {
+            line-height: 1.5;
+        }
+
+        /* counselor specialist ends here */
+
+        /* <!-- service section heading starts here--> */
+
+        .heading-section {
+            text-align: center;
+            padding-top: 3rem;
+            padding-bottom: 2rem;
+            color: #528760;
+        }
+
+        /* <!-- service section heading ends here--> */
+
+        /* <!-- services lists starts here --> */
+        .services-lists {
+            padding: 15px;
+        }
+
+        .container-services {
+            display: flex;
+            margin-right: 30px;
+            margin-left: 30px;
+        }
+
+        .services-2 {
+            text-align: center;
+            width: 100%;
+            display: block;
+            padding: 0;
+            transition: all 0.3s ease;
+
+        }
+
+        .services-2 .icon-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 170px;
+            height: 170px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            z-index: 0;
+            text-align: center;
+        }
+
+        .services-2 .icon-wrap .number-icon {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            z-index: 1;
+            background: #589167;
+            border: 5px solid #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-weight: bolder;
+
+        }
+
+        .services-2 .icon {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            background: #f5f4f0;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 0;
+            transition: all 0.3s ease;
+        }
+
+        .services-2 .icon:hover {
+            background: #589167;
+        }
+
+        .services-2 .icon-wrap .number-icon:hover {
+            background: #fff;
+            color: #589167;
+        }
+
+        .services-2 .icon svg {
+            position: absolute;
+            bottom: 60px;
+            left: 60px;
+        }
+
+        .services-text {
+            text-align: center;
+            color: grey;
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        /* <!-- services lists ends here --> */
+
+        /* <!-- welcome to counselor section starts here --> */
+
+        .welcome-container {
+            display: flex;
+            width: 100%;
+            padding: 60px;
+        }
+
+        .welcome-section1 {
+            height: 600px;
+            width: 45%;
+        }
+
+        .welcome-section1>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .welcome-section2 {
+            height: 600px;
+            width: 55%;
+            background-color: #f5f4f0;
+        }
+
+        .bg-light {
+            background: #f5f4f0 !important;
+        }
+
+        .wrap-about .heading-section1 {
+            /* text-align: justify; */
+            padding: 40px 30px;
+        }
+
+        .heading-section1 .subheading {
+            /* font-size: 18px; */
+            display: inline-block;
+            margin-bottom: 0;
+            color: #589167;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            position: relative;
+        }
+
+        .heading-section1 h2 {
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        .heading-section1 a {
+            text-decoration: none;
+        }
+
+        .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .wrap-about .play-video .icon {
+            width: 40px;
+            height: 30px;
+            border: 1px solid #589167;
+            border-radius: 5px;
+            margin-right: 10px;
+            color: #528760;
+
+        }
+
+        .wrap-about .play-video span.watch {
+            color: #000000;
+            font-size: 14px;
+            text-transform: uppercase;
+
+        }
+
+        .video-vimeo {
+            display: flex;
+            align-items: center;
+        }
+
+        /* <!-- welcome to counselor ends here --> */
+
+        /* <!-- councelor lists section starts here --> */
+
+        .list-counselor {
+            display: flex;
+            width: 100%;
+            padding: 0 100px 0 60px;
+
+        }
+
+        .problem-list li {
+            list-style: none;
+            margin-bottom: 10px;
+            padding: 1.5rem 1rem;
+            margin-right: 30px;
+            border-radius: 4px;
+
+        }
+
+        .li-bg-color {
+            background: #589167;
+            border: 1px solid #589167;
+        }
+
+        .li-bg-color>a {
+            color: #fff;
+        }
+
+        .problem-list li a {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 20px;
+
+        }
+
+        .blk-color {
+            color: rgba(0, 0, 0, 0.7);
+
+        }
+
+        .border-grey {
+            border: 1px solid lightgrey;
+        }
+
+        .problem-lists .image-id {
+            background-image: url(/assets/pexels-cottonbro-studio-4101143.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 65vh;
+        }
+
+        .problem-lists {
+            margin-top: 17px;
+        }
+
+        .problem-lists h3 a {
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.7);
+        }
+
+        /* <!-- councelor lists section ends here --> */
+
+        /* happy client section starts here */
+
+        .happy-client-section {
+            background-image: url(/assets/happy-client.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            height: 400px;
+        }
+
+        .happy-client-inner {
+            background-color: #589167;
+            height: 400px;
+            z-index: 1;
+            opacity: 0.8;
+        }
+
+        .happy-client-inner>div {
+            text-align: center;
+            color: #fff;
+            font-weight: 800;
+            padding-top: 70px;
+            line-height: 1.2;
+        }
+
+        .happy-client-inner .hpy-cli {
+            font-size: 40px;
+            margin-top: 0;
+        }
+
+        /* happy client section ends here */
+
+        /* happy client review section starts here */
+        .happy-client-lists {
+            display: flex;
+            justify-content: center;
+            margin-top: -60px;
+            padding: 0 30px;
+
+        }
+
+        .happy-client-lists>div {
+            margin-right: 30px;
+            width: 350px;
+            background-color: #fff;
+            padding: 20px;
+            z-index: 1;
+            border-radius: 5px;
+
+        }
+
+        .cl-grey {
+            color: gray;
+        }
+
+        .happy-client-lists p {
+            margin-top: 0;
+
+        }
+
+        .hpy-review .user-img {
+            width: 80px;
+            height: 80px;
+            position: relative;
+            border-radius: 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        .hpy-review {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pl-3 {
+            padding: 15px;
+        }
+
+        .name {
+            margin-bottom: 0;
+            color: #000000;
+        }
+
+        /* happy client review section ends here */
+
+
+        /* <!-- Price section starts here --> */
+        .price-section {
+            background-color: #f5f4f0;
+            margin-top: 80px;
+        }
+
+        .gridprice-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+            justify-content: center;
+            margin: 50px 80px 0px 80px;
+
+        }
+
+        .pricing-card {
+            background-color: white;
+            /* Light gray background */
+            padding: 30px 30px 0px 30px;
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 0px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            /* Subtle shadow */
+        }
+
+        .card-header {
+            padding: 0 30px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .card-header p {
+            display: block;
+            margin-bottom: 0;
+        }
+
+        .number {
+            font-size: 60px;
+            font-weight: 600;
+            color: #589167;
+            text-align: center;
+        }
+
+        .card-header sup {
+            font-size: 24px;
+            top: -1em;
+            color: #b3b3b3;
+
+        }
+
+        sub,
+        sup {
+            position: relative;
+            font-size: 75%;
+            line-height: 0;
+            vertical-align: baseline;
+        }
+
+
+        .card-header h2 {
+            margin-top: 0;
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+
+
+        .card-features {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .card-features i {
+            color: #589167;
+        }
+
+        .card-features li {
+            color: grey;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        .start-btn {
+            padding: 1rem 0.5rem 1rem 0.5rem;
+            background: #589167;
+            border: 1px solid #589167;
+            color: #fff;
+            border-radius: 3px;
+            text-transform: uppercase;
+            font-style: 16px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            width: 100%;
+            margin: 50px auto;
+            cursor: pointer;
+            vertical-align: middle;
+        }
+
+        .contact-form {
+            color: white;
+            position: absolute;
+            max-width: 600px;
+            margin: 80px 0px 100px 150px;
+            /* Center the form horizontally */
+            padding: 30px;
+        }
+
+        .contact-form h2 {
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .frm-flex {
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            font-family: 'Times New Roman', Times, serif;
+            color: black;
+            font-size: 15px;
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+
+        .price-overlay {
+            background-color: rgba(92, 113, 86, 0.5);
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+
+        }
+
+        .price-bkgrnd {
+            background-image: url('/assets/Pricecompany.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* <!-- Price section ends here --> */
+
+
+        /* blog-section starts here */
+
+        .Blg-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            /* Responsive layout */
+            grid-gap: 20px;
+            justify-content: center;
+            margin: 0px 80px 0px 80px;
+        }
+
+
+        .blg-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .image-div {
+            height: 40vh;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .image-div img {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .text-div h1 {
+            padding: 10px;
+            text-align: justify;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .text-div {
+            background-color: white;
+            padding: 10px;
+        }
+
+        .text-div p {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .blgcircle {
+            padding: 20px 20px 0px 20px;
+            margin-top: -50px;
+            margin-left: 35%;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            z-index: 1;
+            background: #f3f2ee;
+            border: 5px solid #fff;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .blgcircle div {
+            margin-top: -10px;
+            line-height: 1.05;
+        }
+
+        .blgcircle span {
+            text-align: center;
+            display: block;
+        }
+
+        .blgcircle .day {
+            text-align: center;
+            font-weight: 700;
+            color: #589167;
+            font-size: 30px;
+        }
+
+        .blgcircle .mon {
+            font-size: 16px;
+            color: #000000;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        .blgcircle .yr {
+            color: rgba(0, 0, 0, 0.2) !important;
+            font-size: 11px;
+
+        }
+
+        .blgcircle:hover {
+            background-color: #589167;
+        }
+
+        .blgcircle:hover .day {
+            color: white;
+        }
+
+        .text-div h1:hover {
+            color: #589167;
+            cursor: pointer;
+        }
+
+        /* blog-section ends here */
+
+        /* footer section starts here */
+
+        .footer {
+            background-color: #1a1a1a;
+            padding: 40px 0;
+            color: white;
+        }
+
+        .footer-container {
+            display: flex;
+            /* flex-wrap: wrap; */
+            justify-content: space-between;
+            /* max-width: 1000px; */
+            margin: 0 45px;
+
+        }
+
+        .footer-col {
+            /* margin-left: 40px; */
+            padding: 15px;
+            flex: 1;
+            margin-bottom: 20px;
+
+        }
+
+        .footer-heading {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .footer-title {
+            font-size: 30px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .footer-nav {
+            width: 100%;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+
+        .footer-nav li {
+            margin-bottom: 15px;
+        }
+
+
+        .footer-nav li i {
+            margin-right: 15px;
+
+        }
+
+        .footer-navlink li a i {
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+
+        .footer-navlink li {
+            display: block;
+            border: 3px solid transparent;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+            background-color: olivedrab;
+            padding: 5px;
+        }
+
+
+        .footer-navlink {
+            padding: 0px;
+            display: flex;
+        }
+
+        .footer-navlink i {
+            color: white;
+
+        }
+
+        .footer-nav a {
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-info i {
+            margin-left: -20px;
+            color: white;
+        }
+
+        .footer-info,
+        .footer-address {
+            margin-bottom: 10px;
+        }
+
+        .owl-dots .owl-dot {
+            width: 10px;
+            height: 10px;
+            margin: 5px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.1);
+            text-align: center;
+            cursor: pointer;
+        }
+
+        /* 2nd footer section starts here */
+
+        .footer2-section {
+            background-color: #000000;
+            margin: 0;
+        }
+
+        .copy-right {
+            margin: 0;
+            padding: 40px;
+        }
+
+        .ait-link {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .ait-link:hover {
+            color: #589167;
+        }
+
+        /* 2nd footer section ends here */
+
+
+        /* about us banner starts here */
+        .about-us-banner {
+            position: absolute;
+            top: 300px;
+            left: 45%;
+        }
+
+        .home-nav>a {
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.7);
+            background-color: transparent;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        .home-nav>span {
+            color: rgba(0, 0, 0, 0.7);
+            background-color: transparent;
+            font-size: 14px;
+        }
+
+        .count-customer {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .final-count {
+            font-size: 30px;
+            font-weight: bolder;
+            color: green;
+            margin-bottom: 0;
+        }
+
+        .count-customer div {
+            line-height: 1.2;
+        }
+
+        /* about us banner ends here */
+    </style>
+</head>
+
+<body>
+
+    <!-- headers starts here -->
+    <header>
+        <div class="contact-info">
+            <div class="contact-box">
+                <p><i class="fa-solid fa-phone fa-l"></i> +00 123 456 7890 </p>
+                <p class="mail-to"><i class="fa-solid fa-paper-plane fa-l"><a class="mail"
+                            href="mailto:youremail@email.com"></i> youremail@email.com</a></p>
+            </div>
+            <div class="contact-links">
+                <a href="#"><i class="fa-brands fa-facebook-f fa-l"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter fa-l"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram fa-l"></i></a>
+                <a href="#"><i class="fa-solid fa-globe"></i></a>
+            </div>
+        </div>
+        <div class="container-logo">
+            <div class="logo">
+                <a href="#"><img src="https://www.achieversit.com/assets/images/logo-white.png"
+                        alt="Counselor Logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index1.html">Home</a></li>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="#">Counselor</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- headers ends here -->
+
+    <!--  aboutus banner section starts here  -->
+    <section class="happy-client-section">
+        <section class="happy-client-inner">
+            <div class="about-us-banner">
+                <span class="home-nav">
+                    <a href="index1.html">home></a>
+                    <span>about us></span>
+                </span>
+                <p class="hpy-cli" style="color: #000000;">About Us</p>
+            </div>
+        </section>
+    </section>
+    <!-- /* aboutus banner section ends here */ -->
+
+
+    <!-- welcome to counselor section starts here -->
+
+    <section class="welcome-container">
+        <div class="welcome-section1">
+            <img src="assets/picture2.jpg">
+        </div>
+        <div class="welcome-section2">
+            <div class="bg-light wrap-about">
+                <div class="heading-section1">
+                    <span class="subheading">Welcome to Counselor</span>
+                    <h2 class="bl-color">Best Counseling Funding Network Worldwide.</h2>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                        It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                    <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it
+                        would have been rewritten a thousand times and everything that was left from its origin
+                        would be the word "and" and the Little Blind Text should turn around and return to its own,
+                        safe country.</p>
+
+                    <a href="https://vimeo.com/45830194" class="play-video video-vimeo">
+                        <div class="icon">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <span class="watch">Watch Our Consultant Video</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- welcome to counselor ends here -->
+
+    <!-- customer counts section starts here -->
+    <section class="count-customer">
+        <div>
+            <p class="final-count">3,000</p>
+            <p>Our Satified & Happy <br> Customers</p>
+        </div>
+        <div>
+            <p class="final-count">30</p>
+            <p>Years of Experience in <br> Business</p>
+        </div>
+        <div>
+            <p class="final-count">200</p>
+            <p>Our Qualified Counselor</p>
+        </div>
+        <div>
+            <p class="final-count">40</p>
+            <p>Service Points</p>
+        </div>
+    </section>
+
+    <!-- customer counts section ends here -->
+
+    <!--  happy client section starts here  -->
+    <section class="happy-client-section">
+        <section class="happy-client-inner">
+            <div>
+                <p>Testimonial</p>
+                <p class="hpy-cli">Happy Clients</p>
+            </div>
+        </section>
+    </section>
+    <!-- /* happy client section ends here */ -->
+
+    <!-- /* happy client review section starts here */ -->
+    <section class="happy-client-lists">
+        <div>
+            <p class="cl-grey">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                there live the
+                blind texts.</p>
+            <div class="hpy-review">
+                <div class="user-img" style="background-image: url(assets/pic-1.png)"></div>
+                <div class="pl-3">
+                    <p class="name">Roger Scott</p>
+                    <span class="cl-grey">Marketing Manager</span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p class="cl-grey">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                there live the
+                blind texts.</p>
+            <div class="hpy-review">
+                <div class="user-img" style="background-image: url(assets/pic-1.png)"></div>
+                <div class="pl-3">
+                    <p class="name">Roger Scott</p>
+                    <span class="cl-grey">Marketing Manager</span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p class="cl-grey">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                there live the
+                blind texts.</p>
+            <div class="hpy-review">
+                <div class="user-img" style="background-image: url(assets/pic-1.png)"></div>
+                <div class="pl-3">
+                    <p class="name">Roger Scott</p>
+                    <span class="cl-grey">Marketing Manager</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  happy client review section ends here  -->
+
+
+    <!-- contact form starts here -->
+
+    <section class="price-bkgrnd">
+        <div class="price-overlay">
+            <section class="contact-form">
+                <h2>Send a Message & Get in touch!</h2>
+                <form action="#">
+                    <div class="frm-flex">
+                        <div class="form-group">
+                            <!-- <label for="name">Your Name</label> -->
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <!-- <label for="email">Email</label> -->
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <!-- <label for="text">Services</label> -->
+                        <input type="text" id="service" name="services" placeholder="Services">
+                    </div>
+                    <div class="form-group">
+                        <!-- <label for="message">Message</label> -->
+                        <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit" class="start-btn" style="margin-top: 10px;">Send message</button>
+                </form>
+            </section>
+        </div>
+    </section>
+
+    <!-- contact form ends here -->
+
+    <!-- footer section starts here -->
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <a href="index1.html" class="footer-title">AcheiversIT</a>
+                <p> Far far away, behind the word mountains, far from the countries.</p>
+                <ul class="footer-navlink">
+                    <li><a href="#"><i class="fa-brands fa-twitter fa-l"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f fa-l"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram fa-l"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-heading">Explore</h3>
+                <ul class="footer-nav">
+                    <li><a href="about-us.html"><i class="fa-solid fa-greater-than fa-xs"></i>About</a></li>
+                    <li><a href="#"><i class="fa-solid fa-greater-than fa-xs"></i>Contact</a></li>
+                    <li><a href="#"><i class="fa-solid fa-greater-than fa-xs"></i>What We Do</a></li>
+                    <li><a href="#"><i class="fa-solid fa-greater-than fa-xs"></i>Plans & Pricing </a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-heading">Legal</h3>
+                <ul class="footer-nav">
+                    <li><a href="#"><i class="fa-solid fa-greater-than fa-xs"></i>Join us</a></li>
+                    <li><a href="#"><i class="fa-solid fa-greater-than fa-xs"></i>Blog</a></li>
+                    <li><a href="#"><i class="fa-solid fa-greater-than fa-xs"></i>Privacy Policy</a></li>
+                    <li><a href="#"><i class="fa-solid fa-greater-than fa-xs"></i>Terms&Policies</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-heading">Company</h3>
+                <ul class="footer-nav">
+                    <li><a href="about-us.html"><i class="fa-solid fa-greater-than fa-xs"></i>About Us</a></li>
+                    <li><a href="#"><i class="fa-solid fa-greater-than fa-xs"></i>Blog</a></li>
+                    <li><a href="#"><i class="fa-solid fa-greater-than fa-xs"></i>Contact</a></li>
+                    <li><a href="#"><i class="fa-solid fa-greater-than fa-xs"></i>Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-heading">Have a question</h3>
+                <div style="display: flex; align-items: flex-start; justify-content: center;">
+                    <i class="fa-solid fa-map-location-dot" style="margin-right: 10px; margin-top: 5px;"></i>
+                    <p class="footer-info" style="margin-top: 0;">
+                        203 Fake St. Mountain View, San Francisco, California, USA
+                    </p>
+                </div>
+                <div style="display: flex; align-items: flex-start;">
+                    <i class="fa-solid fa-phone fa-l" style="margin-right: 10px; margin-top: 5px;"></i>
+                    <p class="footer-info" style="margin-top: 0;">+2 392 3929 210 </p>
+                </div>
+                <div style="display: flex; align-items: flex-start;">
+                    <i class="fa-solid fa-paper-plane fa-l" style="margin-right: 10px; margin-top: 5px;"></i>
+                    <a href="mailto:info@yourdomain.com"
+                        style="text-decoration: none; color: #fff; margin-top: 0;">info@yourdomain.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section style="background-color: #000000; margin: 0;">
+        <p style="margin: 0; padding: 40px;">Copyright ©2024 All rights reserved | This template is made with <i
+                class="fa-solid fa-heart"></i> by <a href="#"
+                style="text-decoration: none; color: #fff;">achieversit.com</a></p>
+    </section>
+
+</body>
+
+</html>
