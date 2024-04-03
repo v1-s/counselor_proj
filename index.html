@@ -1,166 +1,1490 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Counselor</title>
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />s
-    <title>Counselor</title>
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Roboto", Arial, sans-serif;
+            background: #fff;
+            font-size: 17px;
+            line-height: 1.8;
+            font-weight: 400;
+            color: gray;
+        }
 
-    body {
-        font-family: sans-serif;
-        margin: 0;
-        padding: 0;
-    }
+        * {
+            box-sizing: border-box;
+        }
 
-    .fa-solid.fa-paper-plane.fa-l {
-        margin-left: -70%;
-    }
+        /* 1st top-header starts here */
+        .contact-info {
+            background-color: rgb(88, 145, 103);
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 90px;
+        }
 
-    .contact-info {
-        background-color: rgb(88, 145, 103);
-        display: grid;
-        grid-template-columns: 60% 1fr;
-        align-items: center;
-        /* Vertically align content in the grid */
-    }
+        .contact-box {
+            display: flex;
+            color: white;
+            font-size: 12px;
+        }
 
-    .contact-info i {
-        color: white
-    }
+        .mail {
+            text-decoration: none;
+            color: white;
+        }
 
-    .contact-links {
-        margin-left: 40%;
-    }
+        .mail-to {
+            padding-left: 20px;
+        }
 
-    .contact-links i {
+        .contact-links {
+            margin: 20px;
+        }
 
-        padding: 10px 15px 10px 15px;
-    }
+        .contact-links a {
+            padding-left: 20px;
+            color: white;
 
-    .contact-box {
-        margin: 10px;
-        display: grid;
-        grid-template-columns: 50% 50%;
-        /* Two columns: flexible text and auto-width icon */
-        /* grid-gap: 5px;  Add spacing between items */
-        align-items: center;
-        /* Vertically center content */
-    }
+        }
 
-    .contact-box p {
-        margin-left: 20%;
-        color: white;
-    }
+        /* 1st top header stops here */
 
-    .contact-box p a {
-        text-decoration: none;
-        margin: 3px;
-        color: white;
-        /* Set email link color */
-    }
+        /* 2nd top header starts here */
+        .container-logo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-    .container {
-        display: grid;
-        grid-template-columns: 40% auto;
-        /* Two columns: logo and navigation */
-        align-items: center;
-        /* Vertically align content in the grid */
-    }
+        .container-logo nav {
+            margin-right: 100px;
+        }
 
-    .logo {
-        grid-column: 1;
-        /* Place logo in the first column */
-    }
+        .logo img {
+            margin-left: 80px;
+            width: 150px;
+            height: 55px;
+        }
 
-    .logo img {
-        margin-left: 70px;
-    }
+        .bl-color {
+            color: rgba(0, 0, 0, 0.7);
+        }
 
-    nav {
-        grid-column: 2;
-        /* Place navigation in the second column */
-        text-align: center;
-        /* Center navigation links */
-        margin-left: -100px;
-        position: sticky;
-        top: 0;
-    }
+        .margin-zero {
+            margin-top: 0;
+        }
 
-    nav ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        /* Remove default bullet points */
-    }
+        nav li {
+            display: inline-block;
+            margin: 0 18px;
+            color: #000000;
+        }
 
-    nav li {
-        display: inline-block;
-        /* Display navigation items inline */
-        margin: 0 18px;
-        /* Add spacing between links */
-    }
+        nav a {
+            text-decoration: none;
+            color: inherit;
+            font-weight: bold;
+            font-size: 15px;
 
-    nav a {
-        text-decoration: none;
-        /* Remove underline from links */
-        color: inherit;
-        /* Inherit text color from body */
-        font-weight: bold;
-        /* Make navigation links bolder */
-    }
+        }
 
-    nav a:hover,
-    .banner-text a:hover {
-        color: blueviolet;
-        /* Change link color on hover */
-    }
+        nav a:hover,
+        .banner-text a:hover {
+            color: rgb(88, 145, 103);
 
-    li:nth-child(1) {
-        color: orange;
-    }
+        }
+
+        li:nth-child(1) {
+            color: rgb(88, 145, 103);
+        }
+
+        /* 2nd top header stops here */
+
+        /* banner starts here */
+        .banner-head {
+            font-size: 60px;
+            margin-top: 0px;
+            color: #fff;
+            line-height: 1.2;
+            margin-bottom: 10px;
+        }
+
+        .banner-text {
+            font-size: 18px;
+            color: #fff;
+        }
+
+        .banner-button button {
+            padding: 15px 15px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact-us {
+            background-color: rgb(88, 145, 103);
+            color: white;
+            font-weight: 400;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .read-more {
+            background-color: white;
+            color: black;
+            font-weight: 400;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .banner-image {
+            background-image: url(/assets/index/banner-image-home.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 820px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .banner-main-text {
+            margin: auto 70px;
+        }
+
+        .play-btn i {
+            color: rgb(88, 145, 103);
+
+        }
+
+        .play-section {
+            margin-right: 100px;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: #fff;
+            position: relative;
+        }
+
+        .play-btn {
+            position: relative;
+            top: 30px;
+            left: 35px;
+        }
+
+        /* banner ends here */
+
+        /* counselor specialist starts here */
+        .container-section {
+            display: flex;
+            margin-top: -70px;
+        }
+
+        .to-do-list,
+        .team-group,
+        .approach-list {
+            display: flex;
+
+        }
+
+        .text h2 {
+            font-size: 24px;
+        }
+
+        .services-h2 {
+            font-size: 24px;
+        }
+
+        .to-do-list {
+            background-color: #589167;
+            color: #fff;
+            width: 450px;
+            padding: 30px 30px 30px 100px;
+
+        }
+
+        .approach-list {
+            background-color: #4e815c;
+            color: #fff;
+            width: 380px;
+            padding: 30px;
+        }
+
+        .team-group {
+            background-color: #528760;
+            color: #fff;
+            width: 380px;
+            padding: 30px;
+        }
+
+        .to-do-list svg {
+            width: 150px;
+            height: 100px;
+            margin-right: 30px;
+
+        }
+
+        .approach-list svg,
+        .team-group svg {
+            width: 150px;
+            height: 100px;
+            margin-right: 30px;
+
+        }
+
+        .text p {
+            line-height: 1.5;
+        }
+
+        /* counselor specialist ends here */
+
+        /* <!-- service section heading starts here--> */
+
+        .heading-section {
+            text-align: center;
+            padding-top: 3rem;
+            padding-bottom: 2rem;
+            color: #528760;
+        }
+
+        /* <!-- service section heading ends here--> */
+
+        /* <!-- services lists starts here --> */
+        .services-lists {
+            padding: 15px;
+        }
+
+        .container-services {
+            display: flex;
+            margin-right: 30px;
+            margin-left: 30px;
+        }
+
+        .services-2 {
+            text-align: center;
+            width: 100%;
+            display: block;
+            padding: 0;
+            transition: all 0.3s ease;
+
+        }
+
+        .services-2 .icon-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 170px;
+            height: 170px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            z-index: 0;
+            text-align: center;
+        }
+
+        .services-2 .icon-wrap .number-icon {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            z-index: 1;
+            background: #589167;
+            border: 5px solid #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-weight: bolder;
+
+        }
+
+        .services-2 .icon {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            background: #f5f4f0;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 0;
+            transition: all 0.3s ease;
+        }
+
+        .services-2 .icon:hover {
+            background: #589167;
+        }
+
+        .icon-wrap .number-icon:hover {
+            color: #589167;
+            background-color: #fff;
+        }
+
+        .services-2 .icon svg {
+            position: absolute;
+            bottom: 60px;
+            left: 60px;
+        }
+
+        .services-text {
+            text-align: center;
+            color: grey;
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        /* <!-- services lists ends here --> */
+
+        /* <!-- welcome to counselor section starts here --> */
+
+        .welcome-container {
+            display: flex;
+            width: 100%;
+            padding: 60px;
+        }
+
+        .welcome-section1 {
+            height: 600px;
+            width: 45%;
+        }
+
+        .welcome-section1>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .welcome-section2 {
+            height: 600px;
+            width: 55%;
+            background-color: #f5f4f0;
+        }
+
+        .bg-light {
+            background: #f5f4f0 !important;
+        }
+
+        .wrap-about .heading-section1 {
+            /* text-align: justify; */
+            padding: 40px 30px;
+        }
+
+        .heading-section1 .subheading {
+            /* font-size: 18px; */
+            display: inline-block;
+            margin-bottom: 0;
+            color: #589167;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            position: relative;
+        }
+
+        .heading-section1 h2 {
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        .heading-section1 a {
+            text-decoration: none;
+        }
+
+        .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .wrap-about .play-video .icon {
+            width: 40px;
+            height: 30px;
+            border: 1px solid #589167;
+            border-radius: 5px;
+            margin-right: 10px;
+            color: #528760;
+
+        }
+
+        .wrap-about .play-video span.watch {
+            color: #000000;
+            font-size: 14px;
+            text-transform: uppercase;
+
+        }
+
+        .video-vimeo {
+            display: flex;
+            align-items: center;
+        }
+
+        /* <!-- welcome to counselor ends here --> */
+
+        /* <!-- councelor lists section starts here --> */
+
+        .list-counselor {
+            display: flex;
+            width: 100%;
+            padding: 0 100px 0 60px;
+
+        }
+
+        .problem-list li {
+            list-style: none;
+            margin-bottom: 10px;
+            padding: 1.5rem 1rem;
+            margin-right: 30px;
+            border-radius: 4px;
+
+        }
+
+        .li-bg-color {
+            background: #589167;
+            border: 1px solid #589167;
+        }
+
+        .li-bg-color>a {
+            color: #fff;
+        }
+
+        .problem-list li a {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 20px;
+
+        }
+
+        .blk-color {
+            color: rgba(0, 0, 0, 0.7);
+
+        }
+
+        .border-grey {
+            border: 1px solid lightgrey;
+        }
+
+        .problem-lists .image-id {
+            background-image: url(/assets/index/pexels-cottonbro-studio-4101143.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 65vh;
+        }
+
+        .problem-lists {
+            margin-top: 17px;
+        }
+
+        .problem-lists h3 a {
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.7);
+        }
+
+        /* <!-- councelor lists section ends here --> */
+
+        /* happy client section starts here */
+
+        .happy-client-section {
+            background-image: url(/assets/index/happy-client.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            height: 400px;
+        }
+
+        .happy-client-inner {
+            background-color: #589167;
+            height: 400px;
+            z-index: 1;
+            opacity: 0.8;
+        }
+
+        .happy-client-inner>div {
+            text-align: center;
+            color: #fff;
+            font-weight: 800;
+            padding-top: 70px;
+            line-height: 1.2;
+        }
+
+        .happy-client-inner .hpy-cli {
+            font-size: 40px;
+            margin-top: 0;
+        }
+
+        /* happy client section ends here */
+
+        /* happy client review section starts here */
+        .happy-client-lists {
+            display: flex;
+            justify-content: center;
+            margin-top: -60px;
+            padding: 0 30px;
+
+        }
+
+        .happy-client-lists>div {
+            margin-right: 30px;
+            width: 350px;
+            background-color: #fff;
+            padding: 20px;
+            z-index: 1;
+            border-radius: 5px;
+
+        }
+
+        .cl-grey {
+            color: gray;
+        }
+
+        .happy-client-lists p {
+            margin-top: 0;
+
+        }
+
+        .hpy-review .user-img {
+            width: 80px;
+            height: 80px;
+            position: relative;
+            border-radius: 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        .hpy-review {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pl-3 {
+            padding: 15px;
+        }
+
+        .name {
+            margin-bottom: 0;
+            color: #000000;
+        }
+
+        /* happy client review section ends here */
+
+
+        /* <!-- Price section starts here --> */
+        .price-section {
+            background-color: #f5f4f0;
+            margin-top: 80px;
+            padding-bottom: 100px;
+        }
+
+        .gridprice-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+            justify-content: center;
+            margin: 50px 80px 0px 80px;
+
+        }
+
+        .pricing-card {
+            background-color: white;
+            /* Light gray background */
+            padding: 30px 30px 0px 30px;
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 0px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            /* Subtle shadow */
+        }
+
+        .card-header {
+            padding: 0 30px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .card-header p {
+            display: block;
+            margin-bottom: 0;
+        }
+
+        .number {
+            font-size: 60px;
+            font-weight: 600;
+            color: #589167;
+            text-align: center;
+        }
+
+        .card-header sup {
+            font-size: 24px;
+            top: -1em;
+            color: #b3b3b3;
+
+        }
+
+        sub,
+        sup {
+            position: relative;
+            font-size: 75%;
+            line-height: 0;
+            vertical-align: baseline;
+        }
+
+
+        .card-header h2 {
+            margin-top: 0;
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+
+
+        .card-features {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .card-features i {
+            color: #589167;
+        }
+
+        .card-features li {
+            color: grey;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        .start-btn {
+            padding: 1rem 0.5rem 1rem 0.5rem;
+            background: #589167;
+            border: 1px solid #589167;
+            color: #fff;
+            border-radius: 3px;
+            text-transform: uppercase;
+            font-style: 16px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            width: 100%;
+            margin: 50px auto;
+            cursor: pointer;
+            vertical-align: middle;
+        }
+
+        .contact-form {
+            color: white;
+            position: absolute;
+            max-width: 600px;
+            margin: 80px 0px 100px 150px;
+            /* Center the form horizontally */
+            padding: 30px;
+        }
+
+        .contact-form h2 {
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .frm-flex {
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            font-family: 'Times New Roman', Times, serif;
+            color: black;
+            font-size: 15px;
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+
+        .price-overlay {
+            background-color: rgba(92, 113, 86, 0.5);
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+
+        }
+
+        .price-bkgrnd {
+            /* margin-top: 100px; */
+            background-image: url('/assets/index/Pricecompany.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* <!-- Price section ends here --> */
+
+
+        /* blog-section starts here */
+
+        .Blg-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            /* Responsive layout */
+            grid-gap: 20px;
+            justify-content: center;
+            margin: 0px 80px 0px 80px;
+        }
+
+
+        .blg-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .image-div {
+            height: 40vh;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .image-div img {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .text-div h1 {
+            padding: 10px;
+            text-align: justify;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .text-div {
+            background-color: white;
+            padding: 10px;
+        }
+
+        .text-div p {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .blgcircle {
+            padding: 20px 20px 0px 20px;
+            margin-top: -50px;
+            margin-left: 35%;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            z-index: 1;
+            background: #f3f2ee;
+            border: 5px solid #fff;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .blgcircle div {
+            margin-top: -10px;
+            line-height: 1.3;
+        }
+
+        .blgcircle span {
+            text-align: center;
+            display: block;
+        }
+
+        .blgcircle .day {
+            text-align: center;
+            font-weight: 700;
+            color: #589167;
+            font-size: 30px;
+        }
+
+        .blgcircle .mon {
+            font-size: 16px;
+            color: #000000;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        .blgcircle .yr {
+            color: rgba(0, 0, 0, 0.2) !important;
+            font-size: 11px;
+
+        }
+
+        .blgcircle:hover {
+            background-color: #589167;
+        }
+
+        .blgcircle:hover .day {
+            color: white;
+        }
+
+        .text-div h1:hover {
+            color: #589167;
+            cursor: pointer;
+        }
+
+        /* blog-section ends here */
+
+       /* footer section starts here */
+
+       .footer {
+            background-color: #1a1a1a;
+            padding: 40px 0;
+            color: white;
+        }
+
+        .footer-container {
+            display: flex;
+            /* flex-wrap: wrap; */
+            justify-content: space-between;
+            /* max-width: 1000px; */
+            margin: 0 45px;
+
+        }
+
+        .footer-col {
+            /* margin-left: 40px; */
+            padding: 15px;
+            flex: 1;
+            margin-bottom: 20px;
+
+        }
+
+        .footer-heading {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .footer-title {
+            font-size: 30px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .footer-nav {
+            width: 100%;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+
+        .footer-nav li {
+            margin-bottom: 15px;
+        }
+
+
+        .footer-nav li i {
+            margin-right: 15px;
+
+        }
+
+        .footer-navlink li a i {
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+
+        .footer-navlink li {
+            display: block;
+            border: 3px solid transparent;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+            background-color: olivedrab;
+            padding: 5px;
+        }
+
+
+        .footer-navlink {
+            padding: 0px;
+            display: flex;
+        }
+
+        .footer-navlink i {
+            color: white;
+
+        }
+
+        .footer-nav a {
+            font-size: 16px;
+            color: white;
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.8)
+        }
+
+        .footer-info i {
+            margin-left: -20px;
+            color: white;
+    
+        }
+
+        .footer-info,
+        .footer-address {
+            margin-bottom: 16px;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.8)
+        }
+
+        .owl-dots .owl-dot {
+            width: 10px;
+            height: 10px;
+            margin: 5px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.1);
+            text-align: center;
+            cursor: pointer;
+        }
+
+        /* 2nd footer section starts here */
+
+        .footer2-section {
+            background-color: #000000;
+            margin: 0;
+        }
+
+        .copy-right {
+            margin: 0;
+            padding: 40px;
+        }
+
+        .ait-link {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .ait-link:hover {
+            color: #589167;
+        }
+
+        /* 2nd footer section ends here */
     </style>
 </head>
+
 <body>
+
+    <!-- headers starts here -->
     <header>
         <div class="contact-info">
             <div class="contact-box">
-                <p><i class="fa-solid fa-phone fa-l"></i>+00 123 456 7890 </p>
-                <p><i class="fa-solid fa-paper-plane fa-l"><a
-                            href="mailto:youremail@email.com"></i>youremail@email.com</a></p>
+                <p><i class="fa-solid fa-phone fa-l"></i> +00 123 456 7890 </p>
+                <p class="mail-to"><i class="fa-solid fa-paper-plane fa-l"><a class="mail"
+                            href="mailto:youremail@email.com"></i> youremail@email.com</a></p>
             </div>
             <div class="contact-links">
-                <i class="fa-brands fa-twitter fa-l"></i>
-                <i class="fa-brands fa-facebook-f fa-l"></i>
-                <i class="fa-brands fa-instagram fa-l"></i>
-                <i class="fa-solid fa-globe fa-lg"></i>
+                <a href="#"><i class="fa-brands fa-facebook-f fa-l"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter fa-l"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram fa-l"></i></a>
+                <a href="#"><i class="fa-solid fa-globe"></i></a>
             </div>
         </div>
-        <div class="container">
+        <div class="container-logo">
             <div class="logo">
-                <img src="./Counselorassests/1584442005485.jpg" alt="Counselor Logo">
+                <a href="index.html"><img src="https://www.achieversit.com/assets/images/logo-white.png"
+                        alt="Counselor Logo"></a>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="Counselor.html">Counselor</a></li>
-                    <li><a href="Services.html">Services</a></li>
-                    <li><a href="Pricing&Details.html">Pricing</a></li>
-                    <li><a href="Blog.html">Blog</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="counselor.html">Counselor</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing-details.html">Pricing</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-
         </div>
-</header>
+    </header>
+    <!-- headers ends here -->
+
+    <!-- banner starts here -->
+    <section class="banner-image">
+        <div class="banner-main-text">
+            <p class="banner-head">Counseling For Your <br> Better Life</p>
+            <p class="banner-text">A small river named Duden flows by their place and supplies it with <br>
+                the necessary regelialia.</p>
+            <div class="banner-button">
+                <button class="contact-us">Contact Us</button>
+                <button class="read-more">Read More</button>
+            </div>
+        </div>
+
+        <div class="play-section">
+            <a href="https://vimeo.com/45830194" class="play-btn"><i class="fa-solid fa-play"></i></a>
+        </div>
+    </section>
+
+    <!-- banner ends here -->
+
+    <!-- /* counselor specialist starts here */ -->
+    <section class="container-section">
+        <div class="to-do-list">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                    d="M152.1 38.2c9.9 8.9 10.7 24 1.8 33.9l-72 80c-4.4 4.9-10.6 7.8-17.2 7.9s-12.9-2.4-17.6-7L7 113C-2.3 103.6-2.3 88.4 7 79s24.6-9.4 33.9 0l22.1 22.1 55.1-61.2c8.9-9.9 24-10.7 33.9-1.8zm0 160c9.9 8.9 10.7 24 1.8 33.9l-72 80c-4.4 4.9-10.6 7.8-17.2 7.9s-12.9-2.4-17.6-7L7 273c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l22.1 22.1 55.1-61.2c8.9-9.9 24-10.7 33.9-1.8zM224 96c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32zm0 160c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32zM160 416c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H192c-17.7 0-32-14.3-32-32zM48 368a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+            </svg>
+            <div class="text">
+                <h2>100% Confidential</h2>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            </div>
+        </div>
+        <div class="team-group">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                <path
+                    d="M72 88a56 56 0 1 1 112 0A56 56 0 1 1 72 88zM64 245.7C54 256.9 48 271.8 48 288s6 31.1 16 42.3V245.7zm144.4-49.3C178.7 222.7 160 261.2 160 304c0 34.3 12 65.8 32 90.5V416c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V389.2C26.2 371.2 0 332.7 0 288c0-61.9 50.1-112 112-112h32c24 0 46.2 7.5 64.4 20.3zM448 416V394.5c20-24.7 32-56.2 32-90.5c0-42.8-18.7-81.3-48.4-107.7C449.8 183.5 472 176 496 176h32c61.9 0 112 50.1 112 112c0 44.7-26.2 83.2-64 101.2V416c0 17.7-14.3 32-32 32H480c-17.7 0-32-14.3-32-32zm8-328a56 56 0 1 1 112 0A56 56 0 1 1 456 88zM576 245.7v84.7c10-11.3 16-26.1 16-42.3s-6-31.1-16-42.3zM320 32a64 64 0 1 1 0 128 64 64 0 1 1 0-128zM240 304c0 16.2 6 31 16 42.3V261.7c-10 11.3-16 26.1-16 42.3zm144-42.3v84.7c10-11.3 16-26.1 16-42.3s-6-31.1-16-42.3zM448 304c0 44.7-26.2 83.2-64 101.2V448c0 17.7-14.3 32-32 32H288c-17.7 0-32-14.3-32-32V405.2c-37.8-18-64-56.5-64-101.2c0-61.9 50.1-112 112-112h32c61.9 0 112 50.1 112 112z" />
+            </svg>
+            <div class="text">
+                <h2>Qualified Team</h2>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            </div>
+        </div>
+        <div class="approach-list">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path
+                    d="M288 0c17.7 0 32 14.3 32 32V49.7C451.8 63.4 557.7 161 573.9 285.9c2 15.6-17.3 24.4-27.8 12.7C532.1 283 504.8 272 480 272c-38.7 0-71 27.5-78.4 64.1c-1.7 8.7-8.7 15.9-17.6 15.9s-15.8-7.2-17.6-15.9C359 299.5 326.7 272 288 272s-71 27.5-78.4 64.1c-1.7 8.7-8.7 15.9-17.6 15.9s-15.8-7.2-17.6-15.9C167 299.5 134.7 272 96 272c-24.8 0-52.1 11-66.1 26.7C19.4 310.4 .1 301.5 2.1 285.9C18.3 161 124.2 63.4 256 49.7V32c0-17.7 14.3-32 32-32zm0 304c12.3 0 23.5 4.6 32 12.2V430.6c0 45-36.5 81.4-81.4 81.4c-30.8 0-59-17.4-72.8-45l-2.3-4.7c-7.9-15.8-1.5-35 14.3-42.9s35-1.5 42.9 14.3l2.3 4.7c3 5.9 9 9.6 15.6 9.6c9.6 0 17.4-7.8 17.4-17.4V316.2c8.5-7.6 19.7-12.2 32-12.2z" />
+            </svg>
+            <div class="text">
+                <h2>Individual Approach</h2>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            </div>
+        </div>
+    </section>
+    <!--  counselor specialist ends here -->
+
+    <!-- service section heading starts here-->
+    <div class="heading-section">
+        <span class="subheading">Services</span>
+        <h2 class="bl-color margin-zero">How It Works</h2>
+    </div>
+    <!-- service section heading ends here-->
+
+    <!-- services lists starts here -->
+    <section class="container-services">
+        <div class="services-lists">
+            <div class="services-2">
+                <div class="icon-wrap">
+                    <div class="number-icon"><span>01</span></div>
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 448 512">
+                            <path
+                                d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z" />
+                        </svg>
+                    </div>
+                </div>
+                <h2 class="services-h2 bl-color">Make Schedule</h2>
+                <p class="services-text">A small river named Duden flows by their place and supplies it with the
+                    necessary regelialia.</p>
+            </div>
+        </div>
+        <div class="services-lists">
+            <div class="services-2">
+                <div class="icon-wrap">
+                    <div class="number-icon"><span>02</span></div>
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 576 512">
+                            <path
+                                d="M284 224.8a34.1 34.1 0 1 0 34.3 34.1A34.2 34.2 0 0 0 284 224.8zm-110.5 0a34.1 34.1 0 1 0 34.3 34.1A34.2 34.2 0 0 0 173.6 224.8zm220.9 0a34.1 34.1 0 1 0 34.3 34.1A34.2 34.2 0 0 0 394.5 224.8zm153.8-55.3c-15.5-24.2-37.3-45.6-64.7-63.6-52.9-34.8-122.4-54-195.7-54a406 406 0 0 0 -72 6.4 238.5 238.5 0 0 0 -49.5-36.6C99.7-11.7 40.9 .7 11.1 11.4A14.3 14.3 0 0 0 5.6 34.8C26.5 56.5 61.2 99.3 52.7 138.3c-33.1 33.9-51.1 74.8-51.1 117.3 0 43.4 18 84.2 51.1 118.1 8.5 39-26.2 81.8-47.1 103.5a14.3 14.3 0 0 0 5.6 23.3c29.7 10.7 88.5 23.1 155.3-10.2a238.7 238.7 0 0 0 49.5-36.6A406 406 0 0 0 288 460.1c73.3 0 142.8-19.2 195.7-54 27.4-18 49.1-39.4 64.7-63.6 17.3-26.9 26.1-55.9 26.1-86.1C574.4 225.4 565.6 196.4 548.3 169.5zM285 409.9a345.7 345.7 0 0 1 -89.4-11.5l-20.1 19.4a184.4 184.4 0 0 1 -37.1 27.6 145.8 145.8 0 0 1 -52.5 14.9c1-1.8 1.9-3.6 2.8-5.4q30.3-55.7 16.3-100.1c-33-26-52.8-59.2-52.8-95.4 0-83.1 104.3-150.5 232.8-150.5s232.9 67.4 232.9 150.5C517.9 342.5 413.6 409.9 285 409.9z" />
+                        </svg>
+                    </div>
+                </div>
+                <h2 class="services-h2 bl-color">Start Discussion</h2>
+                <p class="services-text">A small river named Duden flows by their place and supplies it with the
+                    necessary regelialia.</p>
+            </div>
+        </div>
+        <div class="services-lists">
+            <div class="services-2">
+                <div class="icon-wrap">
+                    <div class="number-icon"><span>03</span></div>
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 576 512">
+                            <path
+                                d="M64 80c-8.8 0-16 7.2-16 16V416c0 8.8 7.2 16 16 16H512c8.8 0 16-7.2 16-16V96c0-8.8-7.2-16-16-16H64zM0 96C0 60.7 28.7 32 64 32H512c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zm96 64a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm104 0c0-13.3 10.7-24 24-24H448c13.3 0 24 10.7 24 24s-10.7 24-24 24H224c-13.3 0-24-10.7-24-24zm0 96c0-13.3 10.7-24 24-24H448c13.3 0 24 10.7 24 24s-10.7 24-24 24H224c-13.3 0-24-10.7-24-24zm0 96c0-13.3 10.7-24 24-24H448c13.3 0 24 10.7 24 24s-10.7 24-24 24H224c-13.3 0-24-10.7-24-24zm-72-64a32 32 0 1 1 0-64 32 32 0 1 1 0 64zM96 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z" />
+                        </svg>
+                    </div>
+                </div>
+                <h2 class="services-h2 bl-color">Enjoy Plan</h2>
+                <p class="services-text">A small river named Duden flows by their place and supplies it with the
+                    necessary regelialia.</p>
+            </div>
+        </div>
+    </section>
+    <!-- services lists ends here -->
+
+    <!-- welcome to counselor section starts here -->
+
+    <section class="welcome-container">
+        <div class="welcome-section1">
+            <img src="assets/index/picture2.jpg">
+        </div>
+        <div class="welcome-section2">
+            <div class="bg-light wrap-about">
+                <div class="heading-section1">
+                    <span class="subheading">Welcome to Counselor</span>
+                    <h2 class="bl-color">Best Counseling Funding Network Worldwide.</h2>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                        It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                    <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it
+                        would have been rewritten a thousand times and everything that was left from its origin
+                        would be the word "and" and the Little Blind Text should turn around and return to its own,
+                        safe country.</p>
+
+                    <a href="https://vimeo.com/45830194" class="play-video video-vimeo">
+                        <div class="icon">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <span class="watch">Watch Our Consultant Video</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- welcome to counselor ends here -->
+
+    <div class="heading-section">
+        <span class="subheading"> Our Services</span>
+        <h2 class="bl-color margin-zero">We Can Help You With This Situation</h2>
+    </div>
+
+    <!-- councelor lists section starts here -->
+
+    <section class="list-counselor">
+        <div class="councelor-listing" style="width: 33%;">
+            <ul class="problem-list">
+                <li class="li-bg-color"><a href="#">Relation Problem</a></li>
+                <li class="border-grey"><a href="#" class="blk-color">Couples Counseling</a></li>
+                <li class="border-grey"><a href="#" class="blk-color">Depression Treatment</a></li>
+                <li class="border-grey"><a href="#" class="blk-color">Family Problem</a></li>
+                <li class="border-grey"><a href="#" class="blk-color">Personal Problem</a></li>
+                <li class="border-grey"><a href="#" class="blk-color">Business Problem</a></li>
+            </ul>
+        </div>
+        <div style="width: 66%;">
+            <div class="problem-lists">
+                <div class="image-id"></div>
+                <h3><a href="#">Relation Problem</a></h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                    live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics,
+                    a large language ocean.</p>
+            </div>
+        </div>
+    </section>
+    <!-- councelor lists section ends here -->
+
+    <!--  happy client section starts here  -->
+    <section class="happy-client-section">
+        <section class="happy-client-inner">
+            <div>
+                <p>Testimonial</p>
+                <p class="hpy-cli">Happy Clients</p>
+            </div>
+        </section>
+    </section>
+    <!-- /* happy client section ends here */ -->
+
+    <!-- /* happy client review section starts here */ -->
+    <section class="happy-client-lists">
+        <div>
+            <p class="cl-grey">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                there live the
+                blind texts.</p>
+            <div class="hpy-review">
+                <div class="user-img" style="background-image: url(assets/pic-1.png)"></div>
+                <div class="pl-3">
+                    <p class="name">Roger Scott</p>
+                    <span class="cl-grey">Marketing Manager</span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p class="cl-grey">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                there live the
+                blind texts.</p>
+            <div class="hpy-review">
+                <div class="user-img" style="background-image: url(assets/pic-1.png)"></div>
+                <div class="pl-3">
+                    <p class="name">Roger Scott</p>
+                    <span class="cl-grey">Marketing Manager</span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p class="cl-grey">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                there live the
+                blind texts.</p>
+            <div class="hpy-review">
+                <div class="user-img" style="background-image: url(assets/pic-1.png)"></div>
+                <div class="pl-3">
+                    <p class="name">Roger Scott</p>
+                    <span class="cl-grey">Marketing Manager</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /* happy client review section ends here */ -->
+
+    <!-- Price section starts here -->
+
+    <section class="price-section">
+        <div class="heading-section">
+            <span class="subheading"> Price & Plans</span>
+            <h2 class="bl-color margin-zero">Affordable Packages</h2>
+        </div>
+
+        <div class="gridprice-container">
+            <div class="pricing-card">
+                <div class="card-header">
+                    <p><sup>$</sup> <span class="number">49</span> <sub>/mo</sub></p>
+
+                    <h2 class="blk-color">For Adults</h2>
+                </div>
+
+                <ul class="card-features">
+                    <li><i class="fa-solid fa-check"></i> Individual Counseling</li>
+                    <li><i class="fa-solid fa-check"></i> Couples Therapy</li>
+                    <li><i class="fa-solid fa-check"></i> Family Therapy</li>
+                </ul>
+                <button class="start-btn">GET STARTED</button>
+            </div>
+            <div class="pricing-card recommended">
+                <div class="card-header">
+                    <p><sup>$</sup> <span class="number">79</span> <sub>/mo</sub></p>
+                    <h2 class="blk-color">For Children</h2>
+                </div>
+                <ul class="card-features">
+                    <li><i class="fa-solid fa-check"></i> Counseling for Children</li>
+                    <li><i class="fa-solid fa-check"></i> Behavioral Management</li>
+                    <li><i class="fa-solid fa-check"></i> Educational Counseling</li>
+                </ul>
+                <button class="start-btn">GET STARTED</button>
+            </div>
+            <div class="pricing-card">
+                <div class="card-header">
+                    <p><sup>$</sup> <span class="number">109</span> <sub>/mo</sub></p>
+                    <h2 class="blk-color">For Business</h2>
+                </div>
+                <ul class="card-features">
+                    <li><i class="fa-solid fa-check"></i> Consultancy Services</li>
+                    <li><i class="fa-solid fa-check"></i> Employee Counseling</li>
+                    <li><i class="fa-solid fa-check"></i> Psychological Assessment</li>
+                </ul>
+                <button class="start-btn">GET STARTED</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price section ends here -->
+
+    <!-- contact form starts here -->
+
+    <section class="price-bkgrnd">
+        <div class="price-overlay">
+            <section class="contact-form">
+                <h2>Send a Message & Get in touch!</h2>
+                <form action="#">
+                    <div class="frm-flex">
+                        <div class="form-group">
+                            <!-- <label for="name">Your Name</label> -->
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <!-- <label for="email">Email</label> -->
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <!-- <label for="text">Services</label> -->
+                        <input type="text" id="service" name="services" placeholder="Services">
+                    </div>
+                    <div class="form-group">
+                        <!-- <label for="message">Message</label> -->
+                        <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit" class="start-btn" style="margin-top: 10px;">Send message</button>
+                </form>
+            </section>
+        </div>
+    </section>
+
+    <!-- contact form ends here -->
+
+    <div class="heading-section">
+        <span class="subheading"> Blog</span>
+        <h2 class="bl-color margin-zero">Recent Blogs</h2>
+    </div>
+
+    <!-- blog section starts here -->
+
+    <div class="Blg-container">
+        <div class="blg-item">
+            <div class="image-div">
+                <a href="Blgsingle.html"><img src="./assets/index/blogcard.jpg" alt="blgcard1"></a>
+            </div>
+            <div class="blgcircle">
+                <div>
+                    <span class="day">18</span>
+                    <span class="mon">APRIL</span>
+                    <span class="yr">2020</span>
+                </div>
+            </div>
+            <div class="text-div">
+                <h1 style="margin-bottom: 0;">Social Media Risks To Mental Health</h1>
+                <p style="margin-top: 0;">
+                    A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                </p>
+            </div>
+        </div>
+        <div class="blg-item">
+            <div class="image-div">
+                <a href="Blgsingle.html"><img src="./assets/index/blogcard.jpg" alt="blgcard1"></a>
+            </div>
+            <div class="blgcircle">
+                <div>
+                    <span class="day">18</span>
+                    <span class="mon">APRIL</span>
+                    <span class="yr">2020</span>
+                </div>
+            </div>
+            <div class="text-div">
+                <h1 style="margin-bottom: 0;">Social Media Risks To Mental Health</h1>
+                <p style="margin-top: 0;">
+                    A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                </p>
+            </div>
+        </div>
+        <div class="blg-item">
+            <div class="image-div">
+                <a href="blog-single.html"><img src="./assets/index/blogcard.jpg" alt="blgcard1"></a>
+            </div>
+            <div class="blgcircle">
+                <div>
+                    <span class="day">18</span>
+                    <span class="mon">APRIL</span>
+                    <span class="yr">2020</span>
+                </div>
+            </div>
+            <div class="text-div">
+                <h1 style="margin-bottom: 0;">Social Media Risks To Mental Health</h1>
+                <p style="margin-top: 0;">
+                    A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- blog section ends here -->
+
+      <!-- footer section starts here -->
+
+      <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <a href="index.html" class="footer-title">AcheiversIT</a>
+                <p class="footer-info"> Far far away, behind the word mountains, far from the countries.</p>
+                <ul class="footer-navlink">
+                    <li><a href="#"><i class="fa-brands fa-twitter fa-l"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f fa-l"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram fa-l"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-heading">Explore</h3>
+                <ul class="footer-nav">
+                    <li><a href="about-us.html"><i class="fa-solid fa-greater-than fa-xs"></i>About</a></li>
+                    <li><a href="contact.html"><i class="fa-solid fa-greater-than fa-xs"></i>Contact</a></li>
+                    <li><a href="#"><i class="fa-solid fa-greater-than fa-xs"></i>What We Do</a></li>
+                    <li><a href="pricing-details.html"><i class="fa-solid fa-greater-than fa-xs"></i>Plans & Pricing
+                        </a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-heading">Legal</h3>
+                <ul class="footer-nav">
+                    <li><a href="#"><i class="fa-solid fa-greater-than fa-xs"></i>Join us</a></li>
+                    <li><a href="blog.html"><i class="fa-solid fa-greater-than fa-xs"></i>Blog</a></li>
+                    <li><a href="#"><i class="fa-solid fa-greater-than fa-xs"></i>Privacy Policy</a></li>
+                    <li><a href="#"><i class="fa-solid fa-greater-than fa-xs"></i>Terms&Policies</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-heading">Company</h3>
+                <ul class="footer-nav">
+                    <li><a href="about-us.html"><i class="fa-solid fa-greater-than fa-xs"></i>About Us</a></li>
+                    <li><a href="blog.html"><i class="fa-solid fa-greater-than fa-xs"></i>Blog</a></li>
+                    <li><a href="contact.html"><i class="fa-solid fa-greater-than fa-xs"></i>Contact</a></li>
+                    <li><a href="#"><i class="fa-solid fa-greater-than fa-xs"></i>Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-heading">Have a question</h3>
+                <div style="display: flex; align-items: flex-start; justify-content: center;">
+                    <i class="fa-solid fa-map-location-dot" style="margin-right: 10px; margin-top: 5px;"></i>
+                    <p class="footer-info" style="margin-top: 0;">
+                        203 Fake St. Mountain View, San Francisco, California, USA
+                    </p>
+                </div>
+                <div style="display: flex; align-items: flex-start;">
+                    <i class="fa-solid fa-phone fa-l" style="margin-right: 10px; margin-top: 5px;"></i>
+                    <p class="footer-info" style="margin-top: 0;">+2 392 3929 210 </p>
+                </div>
+                <div style="display: flex; align-items: flex-start;">
+                    <i class="fa-solid fa-paper-plane fa-l" style="margin-right: 10px; margin-top: 5px;"></i>
+                    <a class="footer-info" href="mailto:info@yourdomain.com"
+                        style="text-decoration: none; margin-top: 0;">info@yourdomain.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section class="footer2-section">
+        <p class="copy-right">Copyright ©2024 All rights reserved | This template is made with <i
+                class="fa-solid fa-heart"></i> by <a href="index.html" class="ait-link">achieversit.com</a></p>
+    </section>
+
 </body>
+
 </html>

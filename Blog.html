@@ -12,20 +12,24 @@
     <title>Our Blog</title>
 
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Roboto", Arial, sans-serif;
+            background: #fff;
+            font-size: 17px;
+            line-height: 1.8;
+            font-weight: 400;
+            color: gray;
+        }
+
         * {
             box-sizing: border-box;
-            margin: 0;
-            padding: 0;
         }
 
-        body {
-            font-family: sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-         /* 1st top-header starts here */
-         .contact-info {
+        /* 1st top-header starts here */
+        .contact-info {
             background-color: rgb(88, 145, 103);
             height: 40px;
             display: flex;
@@ -114,7 +118,7 @@
 
         /* Banner section starts here */
         .happy-client-section {
-            background-image: url(/assets/happy-client.jpg);
+            background-image: url(/assets/blog/happy-client.jpg);
             background-size: 100% 100%;
             background-repeat: no-repeat;
             height: 400px;
@@ -208,7 +212,6 @@
 
         .blgcircle {
             padding: 20px 20px 0px 20px;
-            /* position: absolute; */
             margin-top: -50px;
             margin-left: 35%;
             width: 100px;
@@ -218,12 +221,12 @@
             background: #f3f2ee;
             border: 5px solid #fff;
             justify-content: center;
-            /* Center content vertically */
             align-items: center;
         }
 
         .blgcircle div {
             margin-top: -10px;
+            line-height: 1.3;
         }
 
         .blgcircle span {
@@ -291,9 +294,9 @@
             color: white;
         }
 
-        /* footer section starts here */
+         /* footer section starts here */
 
-        .footer {
+         .footer {
             background-color: #1a1a1a;
             padding: 40px 0;
             color: white;
@@ -375,19 +378,23 @@
         }
 
         .footer-nav a {
-            font-size: 18px;
+            font-size: 16px;
             color: white;
             text-decoration: none;
+            color: rgba(255, 255, 255, 0.8)
         }
 
         .footer-info i {
             margin-left: -20px;
             color: white;
+    
         }
 
         .footer-info,
         .footer-address {
-            margin-bottom: 10px;
+            margin-bottom: 16px;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.8)
         }
 
         .owl-dots .owl-dot {
@@ -443,18 +450,18 @@
         </div>
         <div class="container-logo">
             <div class="logo">
-                <a href="index1.html"><img src="https://www.achieversit.com/assets/images/logo-white.png"
+                <a href="index.html"><img src="https://www.achieversit.com/assets/images/logo-white.png"
                         alt="Counselor Logo"></a>
             </div>
             <nav>
                 <ul>
-                    <li><a href="index1.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="about-us.html">About</a></li>
-                    <li><a href="Counselor.html">Counselor</a></li>
-                    <li><a href="Services.html">Services</a></li>
-                    <li><a href="Pricing&Details.html">Pricing</a></li>
-                    <li><a href="Blog.html">Blog</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="counselor.html">Counselor</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing-details.html">Pricing</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -466,7 +473,7 @@
         <section class="happy-client-inner">
             <div class="about-us-banner">
                 <span class="home-nav">
-                    <a href="index1.html">home></a>
+                    <a href="index.html">home></a>
                     <span>BLOG></span>
                 </span>
                 <p class="hpy-cli" style="color: #000000; font-size: 60px; font-weight: 500;">Blog</p>
@@ -479,7 +486,7 @@
     <div class="Blg-container">
         <div class="blg-item">
             <div class="image-div">
-                <a href="Blgsingle.html"><img src="./assets/blogcard.jpg" alt="blgcard1"></a>
+                <a href="blog-single.html"><img src="./assets/blog/blogcard.jpg" alt="blgcard1"></a>
             </div>
             <div class="blgcircle">
                 <div>
@@ -498,7 +505,7 @@
         </div>
         <div class="blg-item">
             <div class="image-div">
-                <img src="./assets/blgcard2.jpg" alt="blgcard2">
+                <a href="blog-single.html"><img src="./assets/blog/blgcard2.jpg" alt="blgcard2"></a>
             </div>
             <div class="blgcircle">
                 <div>
@@ -517,7 +524,7 @@
         </div>
         <div class="blg-item">
             <div class="image-div">
-                <img src="./assets/blgcard3.jpg" alt="blgcard3">
+                <a href="blog-single.html"><img src="./assets/blog/blgcard3.jpg" alt="blgcard3"></a>
             </div>
             <div class="blgcircle">
                 <div>
@@ -538,7 +545,7 @@
         <!-- ---------------------2 row----------------------------- -->
         <div class="blg-item">
             <div class="image-div">
-                <img src="./assets/blgcard4.jpg" alt="blgcard1">
+                <a href="blog-single.html"><img src="./assets/blog/blgcard3.jpg" alt="blgcard3"></a>
             </div>
             <div class="blgcircle">
                 <div>
@@ -557,7 +564,7 @@
         </div>
         <div class="blg-item">
             <div class="image-div">
-                <img src="./assets/blgcard5.jpg" alt="blgcard2">
+                <a href="blog-single.html"><img src="./assets/blog/blgcard5.jpg" alt="blgcard5"></a>
             </div>
             <div class="blgcircle">
                 <div>
@@ -576,7 +583,7 @@
         </div>
         <div class="blg-item">
             <div class="image-div">
-                <img src="./assets/blgcard6.jpg" alt="blgcard3">
+                <a href="blog-single.html"><img src="./assets/blog/blgcard6.jpg" alt="blgcard6"></a>
             </div>
             <div class="blgcircle">
                 <div>
@@ -596,7 +603,7 @@
         <!-- --------------------------------3 row-------------------------------------------- -->
         <div class="blg-item">
             <div class="image-div">
-                <img src="./assets/card5.jpg" alt="blgcard1">
+                <a href="blog-single.html"><img src="./assets/blog/blgcard5.jpg" alt="blgcard5"></a>
             </div>
             <div class="blgcircle">
                 <div>
@@ -615,7 +622,7 @@
         </div>
         <div class="blg-item">
             <div class="image-div">
-                <img src="./assets/card3.jpg" alt="blgcard2">
+                <a href="blog-single.html"><img src="./assets/blog/blgcard4.jpg" alt="blgcard4"></a>
             </div>
             <div class="blgcircle">
                 <div>
@@ -634,7 +641,7 @@
         </div>
         <div class="blg-item">
             <div class="image-div">
-                <img src="./assets/card6.jpg" alt="blgcard3">
+                <a href="blog-single.html"><img src="./assets/blog/blgcard3.jpg" alt="blgcard3"></a>
             </div>
             <div class="blgcircle">
                 <div>
@@ -655,22 +662,21 @@
     <!-- --------------------------------------Blg Pagination----------------------------------------- -->
 
     <div class="button-container">
-        <button class="number-button">
-            << /button>
-                <button class="number-button">1</button>
-                <button class="number-button">2</button>
-                <button class="number-button">3</button>
-                <button class="number-button">4</button>
-                <button class="number-button">5</button>
-                <button class="number-button">></button>
+        <button class="number-button"><</button>
+        <button class="number-button">1</button>
+        <button class="number-button">2</button>
+        <button class="number-button">3</button>
+        <button class="number-button">4</button>
+        <button class="number-button">5</button>
+        <button class="number-button">></button>
     </div>
-    <!-- footer section starts here -->
+      <!-- footer section starts here -->
 
-    <footer class="footer">
+      <footer class="footer">
         <div class="footer-container">
             <div class="footer-col">
-                <a href="index1.html" class="footer-title">AcheiversIT</a>
-                <p> Far far away, behind the word mountains, far from the countries.</p>
+                <a href="index.html" class="footer-title">AcheiversIT</a>
+                <p class="footer-info"> Far far away, behind the word mountains, far from the countries.</p>
                 <ul class="footer-navlink">
                     <li><a href="#"><i class="fa-brands fa-twitter fa-l"></i></a></li>
                     <li><a href="#"><i class="fa-brands fa-facebook-f fa-l"></i></a></li>
@@ -681,9 +687,9 @@
                 <h3 class="footer-heading">Explore</h3>
                 <ul class="footer-nav">
                     <li><a href="about-us.html"><i class="fa-solid fa-greater-than fa-xs"></i>About</a></li>
-                    <li><a href="Contact.html"><i class="fa-solid fa-greater-than fa-xs"></i>Contact</a></li>
+                    <li><a href="contact.html"><i class="fa-solid fa-greater-than fa-xs"></i>Contact</a></li>
                     <li><a href="#"><i class="fa-solid fa-greater-than fa-xs"></i>What We Do</a></li>
-                    <li><a href="Pricing&Details.html"><i class="fa-solid fa-greater-than fa-xs"></i>Plans & Pricing
+                    <li><a href="pricing-details.html"><i class="fa-solid fa-greater-than fa-xs"></i>Plans & Pricing
                         </a></li>
                 </ul>
             </div>
@@ -691,7 +697,7 @@
                 <h3 class="footer-heading">Legal</h3>
                 <ul class="footer-nav">
                     <li><a href="#"><i class="fa-solid fa-greater-than fa-xs"></i>Join us</a></li>
-                    <li><a href="Blog.html"><i class="fa-solid fa-greater-than fa-xs"></i>Blog</a></li>
+                    <li><a href="blog.html"><i class="fa-solid fa-greater-than fa-xs"></i>Blog</a></li>
                     <li><a href="#"><i class="fa-solid fa-greater-than fa-xs"></i>Privacy Policy</a></li>
                     <li><a href="#"><i class="fa-solid fa-greater-than fa-xs"></i>Terms&Policies</a></li>
                 </ul>
@@ -700,8 +706,8 @@
                 <h3 class="footer-heading">Company</h3>
                 <ul class="footer-nav">
                     <li><a href="about-us.html"><i class="fa-solid fa-greater-than fa-xs"></i>About Us</a></li>
-                    <li><a href="Blog.html"><i class="fa-solid fa-greater-than fa-xs"></i>Blog</a></li>
-                    <li><a href="Contact.html"><i class="fa-solid fa-greater-than fa-xs"></i>Contact</a></li>
+                    <li><a href="blog.html"><i class="fa-solid fa-greater-than fa-xs"></i>Blog</a></li>
+                    <li><a href="contact.html"><i class="fa-solid fa-greater-than fa-xs"></i>Contact</a></li>
                     <li><a href="#"><i class="fa-solid fa-greater-than fa-xs"></i>Careers</a></li>
                 </ul>
             </div>
@@ -719,8 +725,8 @@
                 </div>
                 <div style="display: flex; align-items: flex-start;">
                     <i class="fa-solid fa-paper-plane fa-l" style="margin-right: 10px; margin-top: 5px;"></i>
-                    <a href="mailto:info@yourdomain.com"
-                        style="text-decoration: none; color: #fff; margin-top: 0;">info@yourdomain.com</a>
+                    <a class="footer-info" href="mailto:info@yourdomain.com"
+                        style="text-decoration: none; margin-top: 0;">info@yourdomain.com</a>
                 </div>
             </div>
         </div>
@@ -728,12 +734,7 @@
 
     <section class="footer2-section">
         <p class="copy-right">Copyright ©2024 All rights reserved | This template is made with <i
-                class="fa-solid fa-heart"></i> by <a href="index1.html" class="ait-link">achieversit.com</a></p>
+                class="fa-solid fa-heart"></i> by <a href="index.html" class="ait-link">achieversit.com</a></p>
     </section>
-
-    <!-- footer section ends here -->
-
-
 </body>
-
 </html>
