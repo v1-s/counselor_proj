@@ -10,7 +10,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Counselor</title>
     <style>
-        * {
+        /* * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
@@ -20,165 +20,186 @@
             font-family: sans-serif;
             margin: 0;
             padding: 0;
+        } */
+
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Roboto", Arial, sans-serif;
+            background: #fff;
+            font-size: 17px;
+            line-height: 1.8;
+            font-weight: 400;
+            color: gray;
         }
 
-        .fa-solid.fa-paper-plane.fa-l {
-            margin-left: -70%;
+        * {
+            box-sizing: border-box;
         }
 
-        .contact-info {
+         /* 1st top-header starts here */
+         .contact-info {
             background-color: rgb(88, 145, 103);
-            display: grid;
-            grid-template-columns: 60% 1fr;
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
             align-items: center;
-            /* Vertically align content in the grid */
-        }
-
-        .contact-info i {
-            color: white
-        }
-
-        .contact-links {
-            margin-left: 40%;
-        }
-
-        .contact-links i {
-
-            padding: 10px 15px 10px 15px;
+            padding: 0 90px;
         }
 
         .contact-box {
-            margin: 10px;
-            display: grid;
-            grid-template-columns: 50% 50%;
-            /* Two columns: flexible text and auto-width icon */
-            /* grid-gap: 5px;  Add spacing between items */
-            align-items: center;
-            /* Vertically center content */
-        }
-
-        .contact-box p {
-            margin-left: 20%;
+            display: flex;
             color: white;
+            font-size: 12px;
         }
 
-        .contact-box p a {
+        .mail {
             text-decoration: none;
-            margin: 3px;
             color: white;
-            /* Set email link color */
         }
 
-        .container {
-            display: grid;
-            grid-template-columns: 40% auto;
-            /* Two columns: logo and navigation */
+        .mail-to {
+            padding-left: 20px;
+        }
+
+        .contact-links {
+            margin: 20px;
+        }
+
+        .contact-links a {
+            padding-left: 20px;
+            color: white;
+
+        }
+
+        /* 1st top header stops here */
+
+        /* 2nd top header starts here */
+        .container-logo {
+            display: flex;
+            justify-content: space-between;
             align-items: center;
-            /* Vertically align content in the grid */
         }
 
-        .logo {
-            grid-column: 1;
-            /* Place logo in the first column */
+        .container-logo nav {
+            margin-right: 100px;
         }
 
         .logo img {
-            margin-left: 70px;
+            margin-left: 80px;
+            width: 150px;
+            height: 55px;
         }
 
-        nav {
-            grid-column: 2;
-            /* Place navigation in the second column */
-            text-align: center;
-            /* Center navigation links */
-            margin-left: -100px;
-            position: sticky;
-            top: 0;
+        .bl-color {
+            color: rgba(0, 0, 0, 0.7);
         }
 
-        nav ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            /* Remove default bullet points */
+        .margin-zero {
+            margin-top: 0;
         }
 
         nav li {
             display: inline-block;
-            /* Display navigation items inline */
             margin: 0 18px;
-            /* Add spacing between links */
+            color: #000000;
         }
 
         nav a {
             text-decoration: none;
-            /* Remove underline from links */
             color: inherit;
-            /* Inherit text color from body */
             font-weight: bold;
-            /* Make navigation links bolder */
+            font-size: 15px;
+
         }
 
         nav a:hover,
         .banner-text a:hover {
-            color: blueviolet;
-            /* Change link color on hover */
+            color: rgb(88, 145, 103);
+
         }
 
         li:nth-child(1) {
-            color: orange;
+            color: rgb(88, 145, 103);
         }
 
-        /* ---------------------------BANNER-HERO ------------------------------------------------------------ */
-        .overlay {
-            height: 80vh;
-            width: 100%;
-            top: 0;
-            left: 0px;
+        /* 2nd top header stops here */
+
+        /* Banner section starts here */
+        .happy-client-section {
+            background-image: url(/assets/happy-client.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            height: 400px;
         }
 
-        .image-container h1 {
-            margin: 0px 0px 0px 470px;
-            color: darkorange;
-            font-size: 60px;
+        .happy-client-inner {
+            background-color: #589167;
+            height: 400px;
+            z-index: 1;
+            opacity: 0.8;
+        }
+
+        .happy-client-inner>div {
+            text-align: center;
+            color: #fff;
             font-weight: 800;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding-top: 70px;
+            line-height: 1.2;
         }
 
-        .banner-text {
+        .happy-client-inner .hpy-cli {
+            font-size: 40px;
+            margin-top: 0;
+        }
+
+        .about-us-banner {
+            position: absolute;
+            top: 300px;
+            left: 40%;
+        }
+
+        .home-nav>a {
             text-decoration: none;
-            margin: -150px 0px 10px 500px;
-            display: grid;
-            grid-template-columns: 20% 20%;
-            grid-gap: 3px;
+            color: rgba(0, 0, 0, 0.7);
+            background-color: transparent;
+            font-size: 14px;
+            text-transform: uppercase;
         }
 
-        .banchor {
-            margin-left: -70px;
+        .home-nav>span {
+            color: rgba(0, 0, 0, 0.7);
+            background-color: transparent;
+            font-size: 14px;
         }
 
-        .banner-text a {
-            text-decoration: none;
-            color: rgb(229, 255, 0);
-        }
-
-        .banner-text i {
-            padding-left: 5px;
-        }
+        /* Banner section ends here */
 
         /* ---------------------------------------Services------------------------------------- */
         .serv-container {
-            margin: 170px 0px 0px 580px;
-            display: grid;
-            grid-template-rows: 20% 20%;
             grid-gap: 20px;
             color: darkorange;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+        }
+
+        .serv-container h3{
+            margin-bottom: 0;
+            color: #589167;
+            /* padding-left: 90px; */
         }
 
         .serv-container h4 {
-            margin-left: -90px;
-            font-size: 50px;
-            color: black;
+            margin-top: 0px;
+            font-size: 40px;
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.7);
+            /* padding-left: 100px; */
         }
 
         .grid-container {
@@ -233,13 +254,12 @@
             align-items: center; /* Center content horizontally */
            
         }
-
+/* 
         .fa-solid {
             color: #333;
-            /* Font Awesome icon color */
             margin-bottom: 10px;
-            /* Add spacing below the icon */
-        }
+       
+        } */
 
         .outer-circle {
             position: absolute;
@@ -249,27 +269,33 @@
             height: 50px;
             border-radius: 50%;
             z-index: 1;
-            background: darkorange;
+            background: #589167;
             border: 5px solid #fff;
             justify-content: center;
             /* Center content vertically */
             align-items: center;
+            color: #fff;
+            line-height: 40px;
         }
 
-        .outer-circle span {
-            color: darkblue;
+        /* .outer-circle span {
+            color: #fff;
             line-height: 40px;
             align-items: center;
 
-        }
+        } */
 
         .circle:hover {
-            background-color: rgb(182, 143, 218);
+            background-color: #589167;
+            color: #589167;
+        
             /* Change circle background to green on hover */
         }
 
         .circle:hover .outer-circle {
             background-color: white;
+            color: #589167;
+        
         }
 
         /* .circle:hover i{
@@ -287,7 +313,7 @@
             display: grid;
             grid-template-rows: 20% 20%;
             grid-gap: 20px;
-            color: darkorange;
+            color: #589167;
 
         }
 
@@ -317,154 +343,182 @@
         }
 
         .card p {
-            padding: 10px 20px 0px 40px;
+            padding: 0px 20px 0px 40px;
             justify-content: center;
-            /* margin-bottom: 5px; */
+            margin-top: 0px;
         }
 
         .card h2 {
-            padding: 50px 0px 0px 50px;
+            padding: 0px 40px;
             font-weight: bold;
             margin-bottom: 5px;
             /* Space below title */
         }
 
         .card:hover {
-            background-color: orange;
+            background-color: #589167;
             color: white;
         }
 
-        /*     --------------------------Footer----------------------------------------     */
+        /* footer section starts here */
+
         .footer {
-            background-color: black;
+            background-color: #1a1a1a;
             padding: 40px 0;
-            /* Padding top and bottom */
             color: white;
-            /* Text color */
         }
 
         .footer-container {
-            
             display: flex;
-            /* grid-template-columns: 20% 20% 20% 20%; */
-            flex-wrap: wrap;
+            /* flex-wrap: wrap; */
             justify-content: space-between;
+            /* max-width: 1000px; */
+            margin: 0 45px;
 
-            max-width: 1000px;
-    
-            margin: 0 auto;
-           
         }
 
         .footer-col {
-            margin-left: 40px;
+            /* margin-left: 40px; */
+            padding: 15px;
             flex: 1;
             margin-bottom: 20px;
-           
+
         }
 
         .footer-heading {
             font-size: 18px;
-            /* Heading font size */
             margin-bottom: 10px;
-            /* Space below heading */
-            color: darkorange;
+            color: #fff;
         }
-        .footer-title{
+
+        .footer-title {
             font-size: 30px;
-            /* Heading font size */
             margin-bottom: 10px;
+            text-decoration: none;
+            color: #fff;
         }
 
         .footer-nav {
             width: 100%;
             list-style: none;
             padding: 0;
-    
             margin: 0;
-        
-            font-family: 'Times New Roman', Times, serif;
         }
-        
+
 
         .footer-nav li {
             margin-bottom: 15px;
-           
-            /* Spacing between list items */
         }
-        .footer-navlink li{
-            display: inline-flex;
+
+
+        .footer-nav li i {
+            margin-right: 15px;
+
+        }
+
+        .footer-navlink li a i {
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+
+        .footer-navlink li {
+            display: block;
             border: 3px solid transparent;
+            height: 50px;
+            width: 50px;
             border-radius: 50%;
-            margin-left: 15px;
+            margin-right: 15px;
             background-color: olivedrab;
             padding: 5px;
         }
-        .footer-navlink i{
+
+
+        .footer-navlink {
+            padding: 0px;
+            display: flex;
+        }
+
+        .footer-navlink i {
             color: white;
-            
+
         }
 
         .footer-nav a {
-            font-family: 'Times New Roman', Times, serif;
             font-size: 18px;
             color: white;
-            /* Inherit text color from footer */
             text-decoration: none;
-            /* Remove default link underline */
         }
 
-        .footer-nav a:hover {
-            color:greenyellow;
-            /* Text color on hover */
-            font-weight: bold;
-            /* Bold text on hover */
-        }
-        .footer-navlink i:hover{
-            color: darkorange;
-        }
-        .footer-info i{
+        .footer-info i {
             margin-left: -20px;
-             color: white;
-        }
-    
-        .footer-info a{
-            padding-left: 90px;
+            color: white;
         }
 
         .footer-info,
         .footer-address {
-            font-family: 'Times New Roman', Times, serif;
             margin-bottom: 10px;
-            /* Spacing between info lines */
         }
+
+        .owl-dots .owl-dot {
+            width: 10px;
+            height: 10px;
+            margin: 5px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.1);
+            text-align: center;
+            cursor: pointer;
+        }
+
+        /* 2nd footer section starts here */
+
+        .footer2-section {
+            background-color: #000000;
+            margin: 0;
+        }
+
+        .copy-right {
+            margin: 0;
+            padding: 40px;
+        }
+
+        .ait-link {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .ait-link:hover {
+            color: #589167;
+        }
+
+        /* 2nd footer section ends here */
     </style>
 </head>
 
 <body>
-    <!-----------------------------HEADER SECTION ------------------------------------>
+    <!-- headers starts here -->
     <header>
         <div class="contact-info">
             <div class="contact-box">
-                <p><i class="fa-solid fa-phone fa-l"></i>+00 123 456 7890 </p>
-                <p><i class="fa-solid fa-paper-plane fa-l"><a
-                            href="mailto:youremail@email.com"></i>youremail@email.com</a></p>
+                <p><i class="fa-solid fa-phone fa-l"></i> +00 123 456 7890 </p>
+                <p class="mail-to"><i class="fa-solid fa-paper-plane fa-l"><a class="mail"
+                            href="mailto:youremail@email.com"></i> youremail@email.com</a></p>
             </div>
             <div class="contact-links">
-                <i class="fa-brands fa-twitter fa-l"></i>
-                <i class="fa-brands fa-facebook-f fa-l"></i>
-                <i class="fa-brands fa-instagram fa-l"></i>
-                <i class="fa-solid fa-globe fa-lg"></i>
+                <a href="#"><i class="fa-brands fa-facebook-f fa-l"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter fa-l"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram fa-l"></i></a>
+                <a href="#"><i class="fa-solid fa-globe"></i></a>
             </div>
         </div>
-        <div class="container">
+        <div class="container-logo">
             <div class="logo">
-                <img src="./Counselorassests/1584442005485.jpg" alt="Counselor Logo">
+                <a href="index1.html"><img src="https://www.achieversit.com/assets/images/logo-white.png"
+                        alt="Counselor Logo"></a>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="index1.html">Home</a></li>
+                    <li><a href="about-us.html">About</a></li>
                     <li><a href="Counselor.html">Counselor</a></li>
                     <li><a href="Services.html">Services</a></li>
                     <li><a href="Pricing&Details.html">Pricing</a></li>
@@ -472,22 +526,23 @@
                     <li><a href="Contact.html">Contact</a></li>
                 </ul>
             </nav>
-
         </div>
     </header>
+    <!-- headers ends here -->
 
-    <!-- -----------------------------------BANNER-HERO------------------------------------- -->
-    <div class="image-container">
-        <div class="banner">
-            <img src="./Counselorassests/bannerimg2.jpg" alt="Image 2" class="overlay">
-            <div class="banner-text">
-                <a href="#">HOME<i class="fa-solid fa-greater-than fa-xs"></i></a><a href="#" class="banchor">SERVICES<i
-                        class="fa-solid fa-greater-than fa-xs"></i></a>
+     <!--  aboutus banner section starts here  -->
+     <section class="happy-client-section">
+        <section class="happy-client-inner">
+            <div class="about-us-banner">
+                <span class="home-nav">
+                    <a href="index1.html">home></a>
+                    <span>SERVICES></span>
+                </span>
+                <p class="hpy-cli" style="color: #000000; font-size: 60px; font-weight: 500;">Services</p>
             </div>
-            <h1>Services</h1>
-
-        </div>
-    </div>
+        </section>
+    </section>
+    <!-- /* aboutus banner section ends here */ -->
     <!--------------------------------------------SERVICES-------------------------------------------  -->
     <div class="serv-container">
         <h3>services</h3>
@@ -542,7 +597,7 @@
 
         <div class="serv-gridcontainer">
             <div class="cardimage">
-                <img src="./Counselorassests/card1.jpg">
+                <img src="./assets/card1.jpg">
             </div>
             <div class="card">
                 <h2>Student Problem</h2>
@@ -552,7 +607,7 @@
                     language ocean.</p>
             </div>
             <div class="cardimage">
-                <img src="./Counselorassests/card2.jpg">
+                <img src="./assets/card2.jpg">
             </div>
             <div class="card">
                 <h2>Card Title</h2>
@@ -570,7 +625,7 @@
                     language ocean.</p>
             </div>
             <div class="cardimage">
-                <img src="./Counselorassests/card3.jpg">
+                <img src="./assets/card3.jpg">
             </div>
 
             <div class="card">
@@ -580,13 +635,13 @@
                     language ocean.</p>
             </div>
             <div class="cardimage">
-                <img src="./Counselorassests/card4.jpg">
+                <img src="./assets/card4.jpg">
             </div>
         </div>
         <!-- 3row -->
         <div class="serv-gridcontainer">
             <div class="cardimage">
-                <img src="./Counselorassests/card5.jpg">
+                <img src="./assets/card5.jpg">
             </div>
             <div class="card">
                 <h2>Card Title</h2>
@@ -595,7 +650,7 @@
                     language ocean.</p>
             </div>
             <div class="cardimage">
-                <img src="./Counselorassests/card6.jpg">
+                <img src="./assets/card6.jpg">
             </div>
             <div class="card">
                 <h2>Card Title</h2>
@@ -605,15 +660,13 @@
             </div>
         </div>
     </div>
-    <!-- ---------------------------------------Footer----------------------------------------------- -->
+     <!-- footer section starts here -->
 
-
-    <footer class="footer">
+     <footer class="footer">
         <div class="footer-container">
             <div class="footer-col">
-                <h2 class="footer-title">AcheiversIT</h2>
-                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit quas optio omnis quae
-                    maxime! Neque, eos nihil.</p>
+                <a href="index1.html" class="footer-title">AcheiversIT</a>
+                <p> Far far away, behind the word mountains, far from the countries.</p>
                 <ul class="footer-navlink">
                     <li><a href="#"><i class="fa-brands fa-twitter fa-l"></i></a></li>
                     <li><a href="#"><i class="fa-brands fa-facebook-f fa-l"></i></a></li>
@@ -623,44 +676,58 @@
             <div class="footer-col">
                 <h3 class="footer-heading">Explore</h3>
                 <ul class="footer-nav">
-                    <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>About</a></li>
-                    <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Contact</a></li>
-                    <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>What We Do</a></li>
-                    <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Plans & Pricing </a></li>
+                    <li><a href="about-us.html"><i class="fa-solid fa-greater-than fa-xs"></i>About</a></li>
+                    <li><a href="Contact.html"><i class="fa-solid fa-greater-than fa-xs"></i>Contact</a></li>
+                    <li><a href="#"><i class="fa-solid fa-greater-than fa-xs"></i>What We Do</a></li>
+                    <li><a href="Pricing&Details.html"><i class="fa-solid fa-greater-than fa-xs"></i>Plans & Pricing
+                        </a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h3 class="footer-heading">Legal</h3>
                 <ul class="footer-nav">
-                    <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Join us</a></li>
-                    <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Blog</a></li>
-                    <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Privacy Policy</a></li>
-                    <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Terms&Policies</a></li>
+                    <li><a href="#"><i class="fa-solid fa-greater-than fa-xs"></i>Join us</a></li>
+                    <li><a href="Blog.html"><i class="fa-solid fa-greater-than fa-xs"></i>Blog</a></li>
+                    <li><a href="#"><i class="fa-solid fa-greater-than fa-xs"></i>Privacy Policy</a></li>
+                    <li><a href="#"><i class="fa-solid fa-greater-than fa-xs"></i>Terms&Policies</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h3 class="footer-heading">Company</h3>
                 <ul class="footer-nav">
-                    <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>About Us</a></li>
-                    <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Blog</a></li>
-                    <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Contact</a></li>
-                    <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Careers</a></li>
+                    <li><a href="about-us.html"><i class="fa-solid fa-greater-than fa-xs"></i>About Us</a></li>
+                    <li><a href="Blog.html"><i class="fa-solid fa-greater-than fa-xs"></i>Blog</a></li>
+                    <li><a href="Contact.html"><i class="fa-solid fa-greater-than fa-xs"></i>Contact</a></li>
+                    <li><a href="#"><i class="fa-solid fa-greater-than fa-xs"></i>Careers</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h3 class="footer-heading">Have a question</h3>
-               
-                <address class="footer-info">
-                    203 Fake St. Mountain View, San Francisco, California, USA
-                </address>
-                <p class="footer-info">
-                    <i class="fa-solid fa-phone fa-l"> </i>+2 392 3929 210<br>
-                    <a href="mailto:info@yourdomain.com"><i class="fa-solid fa-paper-plane fa-l"></i>info@yourdomain.com</a>
-                    
-                </p>
+                <div style="display: flex; align-items: flex-start; justify-content: center;">
+                    <i class="fa-solid fa-map-location-dot" style="margin-right: 10px; margin-top: 5px;"></i>
+                    <p class="footer-info" style="margin-top: 0;">
+                        203 Fake St. Mountain View, San Francisco, California, USA
+                    </p>
+                </div>
+                <div style="display: flex; align-items: flex-start;">
+                    <i class="fa-solid fa-phone fa-l" style="margin-right: 10px; margin-top: 5px;"></i>
+                    <p class="footer-info" style="margin-top: 0;">+2 392 3929 210 </p>
+                </div>
+                <div style="display: flex; align-items: flex-start;">
+                    <i class="fa-solid fa-paper-plane fa-l" style="margin-right: 10px; margin-top: 5px;"></i>
+                    <a href="mailto:info@yourdomain.com"
+                        style="text-decoration: none; color: #fff; margin-top: 0;">info@yourdomain.com</a>
+                </div>
             </div>
         </div>
     </footer>
+
+    <section class="footer2-section">
+        <p class="copy-right">Copyright ©2024 All rights reserved | This template is made with <i
+                class="fa-solid fa-heart"></i> by <a href="index1.html" class="ait-link">achieversit.com</a></p>
+    </section>
+
+    <!-- footer section ends here -->
 
 </body>
 

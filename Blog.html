@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,189 +24,189 @@
             padding: 0;
         }
 
-        .fa-solid.fa-paper-plane.fa-l {
-            margin-left: -70%;
-        }
-
-        .contact-info {
+         /* 1st top-header starts here */
+         .contact-info {
             background-color: rgb(88, 145, 103);
-            display: grid;
-            grid-template-columns: 60% 1fr;
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
             align-items: center;
-            /* Vertically align content in the grid */
-        }
-
-        .contact-info i {
-            color: white
-        }
-
-        .contact-links {
-            margin-left: 40%;
-        }
-
-        .contact-links i {
-
-            padding: 10px 15px 10px 15px;
+            padding: 0 90px;
         }
 
         .contact-box {
-            margin: 10px;
-            display: grid;
-            grid-template-columns: 50% 50%;
-            /* Two columns: flexible text and auto-width icon */
-            /* grid-gap: 5px;  Add spacing between items */
-            align-items: center;
-            /* Vertically center content */
-        }
-
-        .contact-box p {
-            margin-left: 20%;
+            display: flex;
             color: white;
+            font-size: 12px;
         }
 
-        .contact-box p a {
+        .mail {
             text-decoration: none;
-            margin: 3px;
             color: white;
-            /* Set email link color */
         }
 
-        .container {
-            position: sticky;
-            top: 10px;
-            display: grid;
-            grid-template-columns: 40% auto;
-            /* Two columns: logo and navigation */
+        .mail-to {
+            padding-left: 20px;
+        }
+
+        .contact-links {
+            margin: 20px;
+        }
+
+        .contact-links a {
+            padding-left: 20px;
+            color: white;
+
+        }
+
+        /* 1st top header stops here */
+
+        /* 2nd top header starts here */
+        .container-logo {
+            display: flex;
+            justify-content: space-between;
             align-items: center;
-            /* Vertically align content in the grid */
         }
 
-        .logo {
-            grid-column: 1;
-            /* Place logo in the first column */
+        .container-logo nav {
+            margin-right: 100px;
         }
 
         .logo img {
-            margin-left: 70px;
+            margin-left: 80px;
+            width: 150px;
+            height: 55px;
         }
 
-        nav {
-            grid-column: 2;
-            /* Place navigation in the second column */
-            text-align: center;
-            /* Center navigation links */
-            margin-left: -100px;
-            /* position: sticky; */
+        .bl-color {
+            color: rgba(0, 0, 0, 0.7);
         }
 
-        nav ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            /* Remove default bullet points */
+        .margin-zero {
+            margin-top: 0;
         }
 
         nav li {
             display: inline-block;
-            /* Display navigation items inline */
             margin: 0 18px;
-            /* Add spacing between links */
+            color: #000000;
         }
 
         nav a {
             text-decoration: none;
-            /* Remove underline from links */
             color: inherit;
-            /* Inherit text color from body */
             font-weight: bold;
-            /* Make navigation links bolder */
+            font-size: 15px;
+
         }
 
         nav a:hover,
         .banner-text a:hover {
-            color: blueviolet;
-            /* Change link color on hover */
+            color: rgb(88, 145, 103);
+
         }
 
         li:nth-child(1) {
-            color: orange;
+            color: rgb(88, 145, 103);
         }
 
-        /* ---------------------------BANNER-HERO ------------------------------------------------------------ */
-        .overlay {
-            height: 80vh;
-            width: 100%;
-            top: 0;
-            left: 0px;
+        /* 2nd top header stops here */
+
+        /* Banner section starts here */
+        .happy-client-section {
+            background-image: url(/assets/happy-client.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            height: 400px;
         }
 
-        .image-container h1 {
-            margin: 0px 0px 0px 480px;
-            color: darkorange;
-            font-size: 60px;
+        .happy-client-inner {
+            background-color: #589167;
+            height: 400px;
+            z-index: 1;
+            opacity: 0.8;
+        }
+
+        .happy-client-inner>div {
+            text-align: center;
+            color: #fff;
             font-weight: 800;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding-top: 70px;
+            line-height: 1.2;
         }
 
-        .banner-text {
+        .happy-client-inner .hpy-cli {
+            font-size: 40px;
+            margin-top: 0;
+        }
+
+        .about-us-banner {
+            position: absolute;
+            top: 300px;
+            left: 45%;
+        }
+
+        .home-nav>a {
             text-decoration: none;
-            margin: -150px 0px 10px 530px;
-            display: grid;
-            grid-template-columns: 20% 20%;
-            grid-gap: 3px;
+            color: rgba(0, 0, 0, 0.7);
+            background-color: transparent;
+            font-size: 14px;
+            text-transform: uppercase;
         }
 
-        .banchor {
-            margin-left: -70px;
+        .home-nav>span {
+            color: rgba(0, 0, 0, 0.7);
+            background-color: transparent;
+            font-size: 14px;
         }
 
-        .banner-text a {
-            text-decoration: none;
-            color: rgb(229, 255, 0);
-        }
+        /* Banner section ends here */
 
-        .banner-text i {
-            padding-left: 5px;        
-        }
-/* ---------------------------------------------Our Blog---------------------------------------------------- */
+        /* ---------------------------------------------Our Blog---------------------------------------------------- */
         .Blg-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive layout */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            /* Responsive layout */
             grid-gap: 20px;
-            justify-content: center; 
-            margin: 150px 80px 0px 80px ;
-            }
+            justify-content: center;
+            margin: 150px 80px 0px 80px;
+        }
 
         .blg-item {
             display: flex;
             flex-direction: column;
-            }
+        }
 
         .image-div {
             height: 40vh;
-            background-color:white;
+            background-color: white;
             cursor: pointer;
-            }
-        .image-div img{
+        }
+
+        .image-div img {
             width: 100%;
             height: 100%;
 
         }
-        .text-div h1{
+
+        .text-div h1 {
             padding: 10px;
-           text-align: justify;
+            text-align: justify;
             font-size: 18px;
             font-weight: bold;
         }
+
         .text-div {
-            background-color:white;
+            background-color: white;
             padding: 10px;
         }
-        .text-div p{
+
+        .text-div p {
             text-align: center;
             padding: 10px;
         }
-        .blgcircle{
+
+        .blgcircle {
             padding: 20px 20px 0px 20px;
             /* position: absolute; */
             margin-top: -50px;
@@ -214,333 +215,271 @@
             height: 100px;
             border-radius: 50%;
             z-index: 1;
-            background:#f3f2ee;
+            background: #f3f2ee;
             border: 5px solid #fff;
             justify-content: center;
             /* Center content vertically */
             align-items: center;
         }
-        .blgcircle div{
+
+        .blgcircle div {
             margin-top: -10px;
         }
-        .blgcircle span{
+
+        .blgcircle span {
             text-align: center;
             display: block;
             /* line-height: 1.2; */
         }
-        .blgcircle .day{
+
+        .blgcircle .day {
             text-align: center;
             font-weight: 700;
             color: #589167;
             font-size: 30px;
         }
-        .blgcircle .mon{
+
+        .blgcircle .mon {
             font-size: 16px;
             color: #000000;
             font-weight: 500;
             text-transform: uppercase;
         }
-        .blgcircle .yr{
+
+        .blgcircle .yr {
             color: rgba(0, 0, 0, 0.2) !important;
             font-size: 11px;
-           
+
         }
-        .blgcircle:hover{
+
+        .blgcircle:hover {
             background-color: #589167;
         }
-        .blgcircle:hover .day{
+
+        .blgcircle:hover .day {
             color: white;
         }
-        .text-div h1:hover{
+
+        .text-div h1:hover {
             color: #589167;
             cursor: pointer;
         }
-/* -----------------------------------Blg Pagination---------------------------------------- */
-       
+
+        /* -----------------------------------Blg Pagination---------------------------------------- */
+
         .button-container {
-            display:-ms-inline-grid;
-            grid-template-rows:repeat(7,1fr);
+            display: -ms-inline-grid;
+            grid-template-rows: repeat(7, 1fr);
             justify-content: space-around;
             margin: 50px 0px 80px 480px;
         }
 
         .number-button {
-            background-color:white; /* Adjust button background color */
-            border:1px solid rgb(187, 184, 184);
+            background-color: white;
+            /* Adjust button background color */
+            border: 1px solid rgb(187, 184, 184);
             padding: 12px;
             border-radius: 50%;
-            cursor: pointer; /* Indicate clickable button */
+            cursor: pointer;
+            /* Indicate clickable button */
             font-size: 18px;
             color: darkblue;
         }
-        .number-button:hover{
-            background-color:#589167;
-            color:white;
+
+        .number-button:hover {
+            background-color: #589167;
+            color: white;
         }
-        /*-------------------------------------------Footer----------------------------------- */
-    .footer {
-        background-color: black;
-        padding: 40px 0;
-        /* Padding top and bottom */
-        color: white;
-        /* Text color */
-    }
 
-    .footer-container {
-        
-        display: flex;
-        /* grid-template-columns: 20% 20% 20% 20%; */
-        flex-wrap: wrap;
-        justify-content: space-between;
+        /* footer section starts here */
 
-        max-width: 1000px;
+        .footer {
+            background-color: #1a1a1a;
+            padding: 40px 0;
+            color: white;
+        }
 
-        margin: 0 auto;
-       
-    }
+        .footer-container {
+            display: flex;
+            /* flex-wrap: wrap; */
+            justify-content: space-between;
+            /* max-width: 1000px; */
+            margin: 0 45px;
 
-    .footer-col {
-        margin-left: 40px;
-        flex: 1;
-        margin-bottom: 20px;
-       
-    }
+        }
 
-    .footer-heading {
-        font-size: 18px;
-        /* Heading font size */
-        margin-bottom: 10px;
-        /* Space below heading */
-        color: darkorange;
-    }
-    .footer-title{
-        font-size: 30px;
-        /* Heading font size */
-        margin-bottom: 10px;
-    }
+        .footer-col {
+            /* margin-left: 40px; */
+            padding: 15px;
+            flex: 1;
+            margin-bottom: 20px;
 
-    .footer-nav {
-        width: 100%;
-        list-style: none;
-        padding: 0;
+        }
 
-        margin: 0;
-    
-        font-family: 'Times New Roman', Times, serif;
-    }
-    
+        .footer-heading {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #fff;
+        }
 
-    .footer-nav li {
-        margin-bottom: 15px;
-       
-        /* Spacing between list items */
-    }
-    .footer-navlink li{
-        display: inline-flex;
-        border: 3px solid transparent;
-        border-radius: 50%;
-        margin-left: 15px;
-        background-color: olivedrab;
-        padding: 5px;
-    }
-    .footer-navlink i{
-        color: white;
-        
-    }
+        .footer-title {
+            font-size: 30px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: #fff;
+        }
 
-    .footer-nav a {
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 18px;
-        color: white;
-        /* Inherit text color from footer */
-        text-decoration: none;
-        /* Remove default link underline */
-    }
-
-    .footer-nav a:hover {
-        color:greenyellow;
-        /* Text color on hover */
-        font-weight: bold;
-        /* Bold text on hover */
-    }
-    .footer-navlink i:hover{
-        color: darkorange;
-    }
-    .footer-info i{
-        margin-left: -20px;
-         color: white;
-    }
-
-    .footer-info a{
-        padding-left: 90px;
-    }
-
-    .footer-info,
-    .footer-address {
-        font-family: 'Times New Roman', Times, serif;
-        margin-bottom: 10px;
-        /* Spacing between info lines */
-    }
+        .footer-nav {
+            width: 100%;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
 
 
-/*-------------------------------------------Footer----------------------------------- */
-.footer {
-        background-color: black;
-        padding: 40px 0;
-        /* Padding top and bottom */
-        color: white;
-        /* Text color */
-    }
+        .footer-nav li {
+            margin-bottom: 15px;
+        }
 
-    .footer-container {
-        
-        display: flex;
-        /* grid-template-columns: 20% 20% 20% 20%; */
-        flex-wrap: wrap;
-        justify-content: space-between;
 
-        max-width: 1000px;
+        .footer-nav li i {
+            margin-right: 15px;
 
-        margin: 0 auto;
-       
-    }
+        }
 
-    .footer-col {
-        margin-left: 40px;
-        flex: 1;
-        margin-bottom: 20px;
-       
-    }
+        .footer-navlink li a i {
+            padding-top: 10px;
+            padding-left: 10px;
+        }
 
-    .footer-heading {
-        font-size: 18px;
-        /* Heading font size */
-        margin-bottom: 10px;
-        /* Space below heading */
-        color: darkorange;
-    }
-    .footer-title{
-        font-size: 30px;
-        /* Heading font size */
-        margin-bottom: 10px;
-    }
+        .footer-navlink li {
+            display: block;
+            border: 3px solid transparent;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+            background-color: olivedrab;
+            padding: 5px;
+        }
 
-    .footer-nav {
-        width: 100%;
-        list-style: none;
-        padding: 0;
 
-        margin: 0;
-    
-        font-family: 'Times New Roman', Times, serif;
-    }
-    
+        .footer-navlink {
+            padding: 0px;
+            display: flex;
+        }
 
-    .footer-nav li {
-        margin-bottom: 15px;
-       
-        /* Spacing between list items */
-    }
-    .footer-navlink li{
-        display: inline-flex;
-        border: 3px solid transparent;
-        border-radius: 50%;
-        margin-left: 15px;
-        background-color: olivedrab;
-        padding: 5px;
-    }
-    .footer-navlink i{
-        color: white;
-        
-    }
+        .footer-navlink i {
+            color: white;
 
-    .footer-nav a {
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 18px;
-        color: white;
-        /* Inherit text color from footer */
-        text-decoration: none;
-        /* Remove default link underline */
-    }
+        }
 
-    .footer-nav a:hover {
-        color:greenyellow;
-        /* Text color on hover */
-        font-weight: bold;
-        /* Bold text on hover */
-    }
-    .footer-navlink i:hover{
-        color: darkorange;
-    }
-    .footer-info i{
-        margin-left: -20px;
-         color: white;
-    }
+        .footer-nav a {
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+        }
 
-    .footer-info a{
-        padding-left: 90px;
-    }
+        .footer-info i {
+            margin-left: -20px;
+            color: white;
+        }
 
-    .footer-info,
-    .footer-address {
-        font-family: 'Times New Roman', Times, serif;
-        margin-bottom: 10px;
-        /* Spacing between info lines */
-    }
-</style>
+        .footer-info,
+        .footer-address {
+            margin-bottom: 10px;
+        }
+
+        .owl-dots .owl-dot {
+            width: 10px;
+            height: 10px;
+            margin: 5px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.1);
+            text-align: center;
+            cursor: pointer;
+        }
+
+        /* 2nd footer section starts here */
+
+        .footer2-section {
+            background-color: #000000;
+            margin: 0;
+        }
+
+        .copy-right {
+            margin: 0;
+            padding: 40px;
+        }
+
+        .ait-link {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .ait-link:hover {
+            color: #589167;
+        }
+
+        /* 2nd footer section ends here */
+    </style>
 </head>
+
 <body>
- <!-----------------------------HEADER SECTION ------------------------------------>
- <header>
-            <div class="contact-info">
-                <div class="contact-box">
-                    <p><i class="fa-solid fa-phone fa-l"></i>+00 123 456 7890 </p>
-                    <p><i class="fa-solid fa-paper-plane fa-l"><a
-                                href="mailto:youremail@email.com"></i>youremail@email.com</a></p>
-                </div>
-                <div class="contact-links">
-                    <i class="fa-brands fa-twitter fa-l"></i>
-                    <i class="fa-brands fa-facebook-f fa-l"></i>
-                    <i class="fa-brands fa-instagram fa-l"></i>
-                    <i class="fa-solid fa-globe fa-lg"></i>
-                </div>
+    <!-- headers starts here -->
+    <header>
+        <div class="contact-info">
+            <div class="contact-box">
+                <p><i class="fa-solid fa-phone fa-l"></i> +00 123 456 7890 </p>
+                <p class="mail-to"><i class="fa-solid fa-paper-plane fa-l"><a class="mail"
+                            href="mailto:youremail@email.com"></i> youremail@email.com</a></p>
             </div>
-            <div class="container">
-                <div class="logo">
-                    <img src="./Counselorassests/1584442005485.jpg" alt="Counselor Logo">
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="Counselor.html">Counselor</a></li>
-                        <li><a href="Services.html">Services</a></li>
-                        <li><a href="Pricing&Details.html">Pricing</a></li>
-                        <li><a href="Blog.html">Blog</a></li>
-                        <li><a href="Contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-    
+            <div class="contact-links">
+                <a href="#"><i class="fa-brands fa-facebook-f fa-l"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter fa-l"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram fa-l"></i></a>
+                <a href="#"><i class="fa-solid fa-globe"></i></a>
             </div>
- </header>
-    
- <!-- -----------------------------------BANNER-HERO------------------------------------- -->
- <div class="image-container">
-            <div class="banner">
-                <img src="./Counselorassests/bannerimg2.jpg" alt="Image 2" class="overlay">
-                <div class="banner-text">
-                    <a href="#">HOME<i class="fa-solid fa-greater-than fa-xs"></i></a><a href="#" class="banchor">BLOG<i
-                            class="fa-solid fa-greater-than fa-xs"></i></a>
-                </div>
-                <h1>Our Blog</h1>
-    
+        </div>
+        <div class="container-logo">
+            <div class="logo">
+                <a href="index1.html"><img src="https://www.achieversit.com/assets/images/logo-white.png"
+                        alt="Counselor Logo"></a>
             </div>
- </div>
-<!--------------------------------Our Blog Section ------------------------------------  -->
+            <nav>
+                <ul>
+                    <li><a href="index1.html">Home</a></li>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="Counselor.html">Counselor</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Pricing&Details.html">Pricing</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- headers ends here -->
+
+    <!--  aboutus banner section starts here  -->
+    <section class="happy-client-section">
+        <section class="happy-client-inner">
+            <div class="about-us-banner">
+                <span class="home-nav">
+                    <a href="index1.html">home></a>
+                    <span>BLOG></span>
+                </span>
+                <p class="hpy-cli" style="color: #000000; font-size: 60px; font-weight: 500;">Blog</p>
+            </div>
+        </section>
+    </section>
+    <!-- /* aboutus banner section ends here */ -->
+
+    <!--------------------------------Our Blog Section ------------------------------------  -->
     <div class="Blg-container">
         <div class="blg-item">
             <div class="image-div">
-             <a href="Blgsingle.html"><img src="./Counselorassests/blogcard.jpg" alt="blgcard1"></a>
+                <a href="Blgsingle.html"><img src="./assets/blogcard.jpg" alt="blgcard1"></a>
             </div>
             <div class="blgcircle">
                 <div>
@@ -548,7 +487,7 @@
                     <span class="mon">APRIL</span>
                     <span class="yr">2020</span>
                 </div>
-                
+
             </div>
             <div class="text-div">
                 <h1>Social Media Risks To Mental Health</h1>
@@ -557,28 +496,9 @@
                 </p>
             </div>
         </div>
-            <div class="blg-item">
-            <div class="image-div">
-                <img src="./Counselorassests/blgcard2.jpg" alt="blgcard2">
-            </div>
-            <div class="blgcircle">
-                <div>
-                    <span class="day">18</span>
-                    <span class="mon">APRIL</span>
-                    <span class="yr">2020</span>
-                </div>
-                
-            </div>
-            <div class="text-div">
-                <h1>Social Media Risks To Mental Health</h1>
-                <p>
-                    A small river named Duden flows by their place and supplies it with the necessary regelialia.
-                </p>
-            </div>
-            </div>
         <div class="blg-item">
             <div class="image-div">
-                <img src="./Counselorassests/blgcard3.jpg" alt="blgcard3">
+                <img src="./assets/blgcard2.jpg" alt="blgcard2">
             </div>
             <div class="blgcircle">
                 <div>
@@ -586,7 +506,7 @@
                     <span class="mon">APRIL</span>
                     <span class="yr">2020</span>
                 </div>
-                
+
             </div>
             <div class="text-div">
                 <h1>Social Media Risks To Mental Health</h1>
@@ -595,11 +515,9 @@
                 </p>
             </div>
         </div>
-       
-    <!-- ---------------------2 row----------------------------- -->
         <div class="blg-item">
             <div class="image-div">
-                <img src="./Counselorassests/blgcard4.jpg" alt="blgcard1">
+                <img src="./assets/blgcard3.jpg" alt="blgcard3">
             </div>
             <div class="blgcircle">
                 <div>
@@ -607,7 +525,7 @@
                     <span class="mon">APRIL</span>
                     <span class="yr">2020</span>
                 </div>
-                
+
             </div>
             <div class="text-div">
                 <h1>Social Media Risks To Mental Health</h1>
@@ -615,29 +533,12 @@
                     A small river named Duden flows by their place and supplies it with the necessary regelialia.
                 </p>
             </div>
-            </div>
-            <div class="blg-item">
-            <div class="image-div">
-                <img src="./Counselorassests/blgcard5.jpg" alt="blgcard2">
-            </div>
-            <div class="blgcircle">
-                <div>
-                    <span class="day">18</span>
-                    <span class="mon">APRIL</span>
-                    <span class="yr">2020</span>
-                </div>
-                
-            </div>
-            <div class="text-div">
-                <h1>Social Media Risks To Mental Health</h1>
-                <p>
-                    A small river named Duden flows by their place and supplies it with the necessary regelialia.
-                </p>
-            </div>
-            </div>
+        </div>
+
+        <!-- ---------------------2 row----------------------------- -->
         <div class="blg-item">
             <div class="image-div">
-                <img src="./Counselorassests/blgcard6.jpg" alt="blgcard3">
+                <img src="./assets/blgcard4.jpg" alt="blgcard1">
             </div>
             <div class="blgcircle">
                 <div>
@@ -645,7 +546,7 @@
                     <span class="mon">APRIL</span>
                     <span class="yr">2020</span>
                 </div>
-                
+
             </div>
             <div class="text-div">
                 <h1>Social Media Risks To Mental Health</h1>
@@ -654,132 +555,185 @@
                 </p>
             </div>
         </div>
-<!-- --------------------------------3 row-------------------------------------------- -->
-    <div class="blg-item">
-        <div class="image-div">
-            <img src="./Counselorassests/card5.jpg" alt="blgcard1">
-        </div>
-        <div class="blgcircle">
-            <div>
-                <span class="day">18</span>
-                <span class="mon">APRIL</span>
-                <span class="yr">2020</span>
+        <div class="blg-item">
+            <div class="image-div">
+                <img src="./assets/blgcard5.jpg" alt="blgcard2">
             </div>
-            
-        </div>
-        <div class="text-div">
-            <h1>Social Media Risks To Mental Health</h1>
-            <p>
-                A small river named Duden flows by their place and supplies it with the necessary regelialia.
-            </p>
-        </div>
+            <div class="blgcircle">
+                <div>
+                    <span class="day">18</span>
+                    <span class="mon">APRIL</span>
+                    <span class="yr">2020</span>
+                </div>
+
+            </div>
+            <div class="text-div">
+                <h1>Social Media Risks To Mental Health</h1>
+                <p>
+                    A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                </p>
+            </div>
         </div>
         <div class="blg-item">
-        <div class="image-div">
-            <img src="./Counselorassests/card3.jpg" alt="blgcard2">
-        </div>
-        <div class="blgcircle">
-            <div>
-                <span class="day">18</span>
-                <span class="mon">APRIL</span>
-                <span class="yr">2020</span>
+            <div class="image-div">
+                <img src="./assets/blgcard6.jpg" alt="blgcard3">
             </div>
-            
-        </div>
-        <div class="text-div">
-            <h1>Social Media Risks To Mental Health</h1>
-            <p>
-                A small river named Duden flows by their place and supplies it with the necessary regelialia.
-            </p>
-        </div>
-        </div>
-    <div class="blg-item">
-        <div class="image-div">
-            <img src="./Counselorassests/card6.jpg" alt="blgcard3">
-        </div>
-        <div class="blgcircle">
-            <div>
-                <span class="day">18</span>
-                <span class="mon">APRIL</span>
-                <span class="yr">2020</span>
+            <div class="blgcircle">
+                <div>
+                    <span class="day">18</span>
+                    <span class="mon">APRIL</span>
+                    <span class="yr">2020</span>
+                </div>
+
             </div>
-            
+            <div class="text-div">
+                <h1>Social Media Risks To Mental Health</h1>
+                <p>
+                    A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                </p>
+            </div>
         </div>
-        <div class="text-div">
-            <h1>Social Media Risks To Mental Health</h1>
-            <p>
-                A small river named Duden flows by their place and supplies it with the necessary regelialia.
-            </p>
+        <!-- --------------------------------3 row-------------------------------------------- -->
+        <div class="blg-item">
+            <div class="image-div">
+                <img src="./assets/card5.jpg" alt="blgcard1">
+            </div>
+            <div class="blgcircle">
+                <div>
+                    <span class="day">18</span>
+                    <span class="mon">APRIL</span>
+                    <span class="yr">2020</span>
+                </div>
+
+            </div>
+            <div class="text-div">
+                <h1>Social Media Risks To Mental Health</h1>
+                <p>
+                    A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                </p>
+            </div>
+        </div>
+        <div class="blg-item">
+            <div class="image-div">
+                <img src="./assets/card3.jpg" alt="blgcard2">
+            </div>
+            <div class="blgcircle">
+                <div>
+                    <span class="day">18</span>
+                    <span class="mon">APRIL</span>
+                    <span class="yr">2020</span>
+                </div>
+
+            </div>
+            <div class="text-div">
+                <h1>Social Media Risks To Mental Health</h1>
+                <p>
+                    A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                </p>
+            </div>
+        </div>
+        <div class="blg-item">
+            <div class="image-div">
+                <img src="./assets/card6.jpg" alt="blgcard3">
+            </div>
+            <div class="blgcircle">
+                <div>
+                    <span class="day">18</span>
+                    <span class="mon">APRIL</span>
+                    <span class="yr">2020</span>
+                </div>
+
+            </div>
+            <div class="text-div">
+                <h1>Social Media Risks To Mental Health</h1>
+                <p>
+                    A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                </p>
+            </div>
         </div>
     </div>
-</div>
-<!-- --------------------------------------Blg Pagination----------------------------------------- -->
+    <!-- --------------------------------------Blg Pagination----------------------------------------- -->
 
     <div class="button-container">
-        <button class="number-button"><</button>
-        <button class="number-button">1</button>
-        <button class="number-button">2</button>
-        <button class="number-button">3</button>
-        <button class="number-button">4</button>
-        <button class="number-button">5</button>
-        <button class="number-button">></button>
+        <button class="number-button">
+            << /button>
+                <button class="number-button">1</button>
+                <button class="number-button">2</button>
+                <button class="number-button">3</button>
+                <button class="number-button">4</button>
+                <button class="number-button">5</button>
+                <button class="number-button">></button>
     </div>
-   <!-- ------------------------------Footer---------------------------------- -->
+    <!-- footer section starts here -->
 
-   <footer class="footer">
-    <div class="footer-container">
-        <div class="footer-col">
-            <h2 class="footer-title">AcheiversIT</h2>
-            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit quas optio omnis quae
-                maxime! Neque, eos nihil.</p>
-            <ul class="footer-navlink">
-                <li><a href="#"><i class="fa-brands fa-twitter fa-l"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-facebook-f fa-l"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram fa-l"></i></a></li>
-            </ul>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <a href="index1.html" class="footer-title">AcheiversIT</a>
+                <p> Far far away, behind the word mountains, far from the countries.</p>
+                <ul class="footer-navlink">
+                    <li><a href="#"><i class="fa-brands fa-twitter fa-l"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f fa-l"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram fa-l"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-heading">Explore</h3>
+                <ul class="footer-nav">
+                    <li><a href="about-us.html"><i class="fa-solid fa-greater-than fa-xs"></i>About</a></li>
+                    <li><a href="Contact.html"><i class="fa-solid fa-greater-than fa-xs"></i>Contact</a></li>
+                    <li><a href="#"><i class="fa-solid fa-greater-than fa-xs"></i>What We Do</a></li>
+                    <li><a href="Pricing&Details.html"><i class="fa-solid fa-greater-than fa-xs"></i>Plans & Pricing
+                        </a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-heading">Legal</h3>
+                <ul class="footer-nav">
+                    <li><a href="#"><i class="fa-solid fa-greater-than fa-xs"></i>Join us</a></li>
+                    <li><a href="Blog.html"><i class="fa-solid fa-greater-than fa-xs"></i>Blog</a></li>
+                    <li><a href="#"><i class="fa-solid fa-greater-than fa-xs"></i>Privacy Policy</a></li>
+                    <li><a href="#"><i class="fa-solid fa-greater-than fa-xs"></i>Terms&Policies</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-heading">Company</h3>
+                <ul class="footer-nav">
+                    <li><a href="about-us.html"><i class="fa-solid fa-greater-than fa-xs"></i>About Us</a></li>
+                    <li><a href="Blog.html"><i class="fa-solid fa-greater-than fa-xs"></i>Blog</a></li>
+                    <li><a href="Contact.html"><i class="fa-solid fa-greater-than fa-xs"></i>Contact</a></li>
+                    <li><a href="#"><i class="fa-solid fa-greater-than fa-xs"></i>Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-heading">Have a question</h3>
+                <div style="display: flex; align-items: flex-start; justify-content: center;">
+                    <i class="fa-solid fa-map-location-dot" style="margin-right: 10px; margin-top: 5px;"></i>
+                    <p class="footer-info" style="margin-top: 0;">
+                        203 Fake St. Mountain View, San Francisco, California, USA
+                    </p>
+                </div>
+                <div style="display: flex; align-items: flex-start;">
+                    <i class="fa-solid fa-phone fa-l" style="margin-right: 10px; margin-top: 5px;"></i>
+                    <p class="footer-info" style="margin-top: 0;">+2 392 3929 210 </p>
+                </div>
+                <div style="display: flex; align-items: flex-start;">
+                    <i class="fa-solid fa-paper-plane fa-l" style="margin-right: 10px; margin-top: 5px;"></i>
+                    <a href="mailto:info@yourdomain.com"
+                        style="text-decoration: none; color: #fff; margin-top: 0;">info@yourdomain.com</a>
+                </div>
+            </div>
         </div>
-        <div class="footer-col">
-            <h3 class="footer-heading">Explore</h3>
-            <ul class="footer-nav">
-                <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>About</a></li>
-                <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Contact</a></li>
-                <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>What We Do</a></li>
-                <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Plans & Pricing </a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h3 class="footer-heading">Legal</h3>
-            <ul class="footer-nav">
-                <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Join us</a></li>
-                <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Blog</a></li>
-                <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Privacy Policy</a></li>
-                <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Terms&Policies</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h3 class="footer-heading">Company</h3>
-            <ul class="footer-nav">
-                <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>About Us</a></li>
-                <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Blog</a></li>
-                <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Contact</a></li>
-                <li><a href="#"<i class="fa-solid fa-greater-than fa-xs"></i>Careers</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h3 class="footer-heading">Have a question</h3>
-           
-            <address class="footer-info">
-                203 Fake St. Mountain View, San Francisco, California, USA
-            </address>
-            <p class="footer-info">
-                <i class="fa-solid fa-phone fa-l"> </i>+2 392 3929 210<br>
-                <a href="mailto:info@yourdomain.com"><i class="fa-solid fa-paper-plane fa-l"></i>info@yourdomain.com</a>
-                
-            </p>
-        </div>
-    </div>
-</footer>
+    </footer>
+
+    <section class="footer2-section">
+        <p class="copy-right">Copyright ©2024 All rights reserved | This template is made with <i
+                class="fa-solid fa-heart"></i> by <a href="index1.html" class="ait-link">achieversit.com</a></p>
+    </section>
+
+    <!-- footer section ends here -->
 
 
 </body>
+
 </html>
